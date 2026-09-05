@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Completo | SOFTBYKE</title>
+
+    <!--
+        O CSS abaixo define APENAS a estrutura de layout
+        (menu lateral fixo à esquerda + conteúdo ao lado, do jeito
+        que aparece na imagem de referência). Nenhuma cor, fonte,
+        sombra ou estilo visual foi definido.
+    -->
+    <style>
+        #catalogo-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+
+        #menu-catalogo {
+            flex: 0 0 260px;
+            position: sticky;
+            top: 1rem;
+        }
+
+        #menu-catalogo ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #conteudo-catalogo {
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sera definido posteriormente -->
+    <header></header>
+
+    <main>
+
+        <!-- Seção de introdução / banner da página -->
+        <section id="topo-catalogo">
+            <p>Navegue por categoria</p>
+            <h1>Catálogo Completo</h1>
+            <p>Explore nossa linha completa de bicicletas, peças e acessórios para todos os estilos de ciclismo.</p>
+        </section>
+
+        <!-- CONTAINER PRINCIPAL: MENU LATERAL + CONTEÚDO -->
+        <div id="catalogo-container">
+
+            <!-- MENU LATERAL DE NAVEGAÇÃO DO CATÁLOGO -->
+            <nav id="menu-catalogo" aria-label="Navegação do catálogo">
+                <ol>
+                    <li><a href="#bicicletas-urbanas">Bicicletas Urbanas</a></li>
+                    <li><a href="#bicicletas-mountain-bike">Bicicletas Mountain Bike</a></li>
+                    <li><a href="#bicicletas-speed-road">Bicicletas Speed/Road</a></li>
+                    <li><a href="#bicicletas-eletricas">Bicicletas Elétricas</a></li>
+                    <li><a href="#bicicletas-infantis">Bicicletas Infantis</a></li>
+                    <li><a href="#pecas">Peças (freios, câmbios, rodas, etc.)</a></li>
+                    <li><a href="#capacetes">Capacetes</a></li>
+                    <li><a href="#luvas">Luvas</a></li>
+                    <li><a href="#roupas-esportivas">Roupas esportivas</a></li>
+                    <li><a href="#oculos-de-ciclismo">Óculos de ciclismo</a></li>
+                    <li><a href="#acessorios">Acessórios (garrafas, suportes, luzes)</a></li>
+                    <li><a href="#ferramentas-e-manutencao">Ferramentas e manutenção</a></li>
+                    <li><a href="#mochilas-e-bolsas">Mochilas e bolsas</a></li>
+                    <li><a href="#promocoes">Promoções</a></li>
+                </ol>
+            </nav>
+
+            <!-- CONTEÚDO DAS CATEGORIAS -->
+            <div id="conteudo-catalogo">
+
+                <article id="bicicletas-urbanas">
+                    <h2>Bicicletas Urbanas</h2>
+                    <p>Projetadas para oferecer conforto, agilidade e praticidade no trânsito das cidades, as bicicletas urbanas são a escolha ideal para quem busca fugir dos congestionamentos e adotar um estilo de vida sustentável. Com posições de pilotagem eretas, selins anatômicos e opções com paralamas e bagageiros integrados, elas garantem deslocamentos diários suaves, eficientes e cheios de estilo para o trabalho, faculdade ou passeios no parque.</p>
+                </article>
+
+                <article id="bicicletas-mountain-bike">
+                    <h2>Bicicletas Mountain Bike</h2>
+                    <p>Desenvolvidas para encarar trilhas desafiadoras, estradas de terra e terrenos acidentados, as mountain bikes (MTB) da SOFTBYKE combinam durabilidade extrema, quadros reforçados e sistemas de suspensão de alta absorção de impacto. Equipadas com pneus de cravos largos para máxima tração e freios precisos, elas proporcionam total estabilidade e controle aos ciclistas que buscam aventura, adrenalina e contato com a natureza.</p>
+                </article>
+
+                <article id="bicicletas-speed-road">
+                    <h2>Bicicletas Speed/Road</h2>
+                    <p>Focadas em aerodinâmica, leveza e velocidade, as bicicletas Speed/Road são perfeitas para asfaltos lisos e treinos de longa distância. Com quadros de geometria agressiva, guidões curvos e componentes otimizados para menor resistência ao ar, estes modelos permitem alcançar altas velocidades com esforço eficiente, sendo ideais para praticantes de ciclismo de estrada e atletas focados em performance.</p>
+                </article>
+
+                <article id="bicicletas-eletricas">
+                    <h2>Bicicletas Elétricas</h2>
+                    <p>Unindo a tradição do pedalar com a tecnologia de assistência a motor, as bicicletas elétricas (e-bikes) revolucionam a forma como nos locomovemos. Ideais para vencer subidas íngremes sem esforço excessivo e percorrer maiores distâncias em menos tempo, elas oferecem bateria de longa duração, níveis ajustáveis de pedalada assistida e uma experiência de condução moderna, acessível e ecológica.</p>
+                </article>
+
+                <article id="bicicletas-infantis">
+                    <h2>Bicicletas Infantis</h2>
+                    <p>Criadas especialmente para incentivar os primeiros pedais com segurança e diversão, nossas bicicletas infantis combinam ergonomia adaptada à anatomia das crianças, materiais leves e design colorido. Equipadas com protetores de corrente, freios macios de fácil acionamento e rodas de apoio removíveis, elas garantem que os pequenos aprendam a equilibrar-se com total conforto e proteção.</p>
+                </article>
+
+                <article id="pecas">
+                    <h2>Peças (freios, câmbios, rodas, etc.)</h2>
+                    <p>Para manter sua bicicleta sempre em alto rendimento ou realizar aquele upgrade dos sonhos, oferecemos uma linha completa de componentes de reposição e alta performance. De sistemas de freios hidráulicos e transmissões precisas de câmbio até rodas leves e correntes reforçadas, trabalhamos com as melhores marcas do mercado para garantir máxima eficiência, durabilidade e precisão mecânica a cada pedalada.</p>
+                </article>
+
+                <article id="capacetes">
+                    <h2>Capacetes</h2>
+                    <p>Item indispensável em qualquer pedalada, os capacetes da SOFTBYKE combinam tecnologia avançada de absorção de impactos, estruturas leves e excelente fluxo de ventilação. Projetados para se ajustar com precisão ao formato da cabeça, eles garantem proteção máxima contra quedas sem comprometer o conforto térmico, seja em trajetos urbanos cotidianos, treinos intensos no asfalto ou trilhas técnicas.</p>
+                </article>
+
+                <article id="luvas">
+                    <h2>Luvas</h2>
+                    <p>Desenvolvidas para melhorar a aderência no guidão e reduzir o impacto de vibrações nas mãos, as luvas de ciclismo são essenciais para evitar calos e dormências durante o trajeto. Com tecidos respiráveis, almofadas em gel estrategicamente posicionadas e fechamento ajustável, nossas opções de dedo curto e dedo longo oferecem proteção contra quedas e conforto prolongado em qualquer estação do ano.</p>
+                </article>
+
+                <article id="roupas-esportivas">
+                    <h2>Roupas Esportivas</h2>
+                    <p>Nossa linha de vestuário técnico foi projetada para otimizar a performance e o conforto do ciclista sob diferentes condições climáticas. Composta por bermudas e bretelles com forros anatômicos de alta densidade, além de camisas respiráveis com proteção UV e bolsos traseiros práticos, as peças garantem controle térmico, liberdade de movimento e secagem rápida para treinos curtos ou longos pedais.</p>
+                </article>
+
+                <article id="oculos-de-ciclismo">
+                    <h2>Óculos de Ciclismo</h2>
+                    <p>Proteção visual e clareza de visão são fundamentais para a segurança do ciclista. Nossos óculos contam com lentes de alta definição com proteção contra raios UV400, tratamento antirrisco e opções com lentes fotocromáticas ou polarizadas. As armações leves e ergonômicas evitam que o acessório escorregue com o suor, protegendo os olhos contra poeira, insetos, vento e variações repentinas de luminosidade.</p>
+                </article>
+
+                <article id="acessorios">
+                    <h2>Acessórios (garrafas, suportes, luzes)</h2>
+                    <p>Complete a sua experiência sobre duas rodas com nossa seleção de acessórios funcionais essenciais. Mantenha a hidratação sempre ao alcance com nossas garrafas térmicas e suportes firmes, e garanta visibilidade total em pedais noturnos ou de neblina com faróis e piscas LED de alta intensidade e recarregáveis via USB.</p>
+                </article>
+
+                <article id="ferramentas-e-manutencao">
+                    <h2>Ferramentas e Manutenção</h2>
+                    <p>Garanta autonomia nas suas viagens e mantenha a bike sempre revisada com nossas soluções de manutenção. Disponibilizamos canivetes multiuso compactos, bombas de ar portáteis, kits de reparo de pneu, lubrificantes de corrente para diferentes climas e desengraxantes, permitindo que você resolva pequenos imprevistos na rota ou faça a manutenção preventiva em casa.</p>
+                </article>
+
+                <article id="mochilas-e-bolsas">
+                    <h2>Mochilas e Bolsas</h2>
+                    <p>Transportar pertences pessoais, ferramentas ou suprimentos com praticidade e estabilidade nunca foi tão simples. Nossa linha inclui mochilas de hidratação com reservatórios de água, bolsas de selim, alforjes de quadro e mochilas impermeáveis para uso urbano, projetadas com alças ajustáveis e tiras refletivas para distribuir o peso corretamente sem atrapalhar a pilotagem.</p>
+                </article>
+
+                <article id="promocoes">
+                    <h2>Promoções</h2>
+                    <p>Fique atento às melhores oportunidades para renovar seu equipamento com preços imperdíveis e condições exclusivas. Nossa seção de promoções reúne ofertas especiais em bicicletas selecionadas, liquidações de vestuário e pacotes promocionais de acessórios com a mesma garantia de qualidade e suporte técnico da SOFTBYKE.</p>
+                </article>
+
+                <p id="voltar-ao-topo"><a href="#topo-catalogo">Voltar ao Início</a></p>
+
+            </div>
+            <!-- fim #conteudo-catalogo -->
+
+        </div>
+        <!-- fim #catalogo-container -->
+
+    </main>
+
+    <!-- era definido posteriormente -->
+    <footer></footer>
+
+</body>
+</html>
