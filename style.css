@@ -33,3 +33,19 @@
     html {
       scroll-behavior: smooth;
     }
+
+    @media (max-width: 900px){
+      .grid-galeria{
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px){
+      .grid-container{
+        padding: 0 15px 40px 15px; /* Reduz um pouco o padding lateral no celular */
+      }
+      .grid-galeria{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px; /* diminui espaçamento das imagens em telas mto estreitas */
+      }
+    }
