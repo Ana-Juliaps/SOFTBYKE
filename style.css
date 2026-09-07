@@ -1,6 +1,43 @@
+.grid-links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Formatação do link para centralizar os itens */
+.card-link {
+  display: flex;
+  flex-direction: column; /* Coloca o H3 abaixo da imagem */
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #111111;
+}
+
 .logo-brand {
-  max-width: 120px;
-  max-height: 40px;
-  object-fit: contain;
+  width: 100%; 
+  height: 140px; 
+  object-fit: contain; /* Mantém a proporção da logo sem distorcer */
+  background-color: #d9d9d9; /* Fundo cinza caso a logo tenha fundo transparente */
   margin-bottom: 10px;
+}
+
+/* Formatação do texto do link */
+.card-link h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .grid-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
