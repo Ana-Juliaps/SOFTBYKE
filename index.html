@@ -6,338 +6,431 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 
-    <!--Link do bootstrap (framework CSS para estilização e componentes)-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!--Biblioteca Font Awesome 5 Pro para carregar ícones na página-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+
+    <style>
+
+    </style>
 </head>
 
 <body>
 
-    <!--BARRA DE NAVEGAÇÃO-->
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="navbar">
+        <table>
+            <tr>
+                <td class="navbar-logo" width="5%">SOFTBYKE</td>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
-        <div class="container-fluid align-items-center px-4">
+                <td width="10%">
+                    <form class="navbar-search" role="search">
+                        <input type="search" name="busca" size="35" placeholder="Buscar produtos...">
+                    </form>
+                </td>
 
-            <!-- LOGO -->
-            <a class="navbar-brand fw-bold" href="#">SOFTBYKE</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- este div cresce e ocupa todo o espaço à direita da logo -->
-            <div class="collapse navbar-collapse flex-grow-1" id="navbarSupportedContent">
-
-                <!-- BUSCA -->
-                <form class="d-flex align-items-center me-4 my-2 my-lg-0" role="search"
-                    style="max-width: 500px; width: 100%;">
-                    <div class="input-group">
-                        <span class="input-group-text bg-light border-end-0 rounded-start-pill ps-3">
-                            <i class="fas fa-search text-muted"></i>
-                        </span>
-                        <input class="form-control bg-light border-start-0 rounded-end-pill py-2 shadow-none"
-                            type="search" placeholder="" aria-label="Search">
-                    </div>
-                </form>
-
-                <!-- LINKS-->
-                <ul class="navbar-nav d-flex flex-grow-1 justify-content-between align-items-center mb-0">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Empresa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Catálogo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Documentos</a></li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-
-    <!-- HOME (DESCRIÇÃO DA LOJA)-->
+                <td width="15%"><a href="index.html">Home</a></td>
+                <td width="15%"><a href="empresa.html">Empresa</a></td>
+                <td width="15%"><a href="catalogo.html">Catálogo</a></td>
+                <td width="15%"><a href="galeria.html">Galeria</a></td>
+                <td width="15%"><a href="documentos.html">Documentos</a></td>
+            </tr>
+        </table>
+    </header>
+    <hr>
+    <!-- ===================== HERO ===================== -->
     <section class="hero">
         <p class="hero-tagline">Especialistas em Ciclismo desde 2010</p>
         <h1 class="hero-title">A melhor seleção de bicicletas e peças do Brasil</h1>
         <p class="hero-subtitle">Encontre a bike perfeita para seu estilo. Urbanas, MTB, Speed, Elétricas e muito mais
             com os melhores preços e condições.</p>
-
-        <div class="hero-stats">
-            <div class="stat-item">
-                <span class="stat-number">500+</span>
-                <span class="stat-label">Produtos</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">15 Anos</span>
-                <span class="stat-label">de Experiência</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">12.000+</span>
-                <span class="stat-label">Clientes Satisfeitos</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">Frete Grátis</span>
-                <span class="stat-label">Acima de R$299</span>
-            </div>
-        </div>
     </section>
 
-    <!--  PRODUTOS EM DESTAQUE  -->
-    <section class="featured-products">
-        <h2 class="section-title">Produtos em Destaque</h2>
+    <section class="hero2">
+        <table>
 
-        <div class="products-grid">
+            <tr align="center">
 
-            <article class="product-card">
-                <div class="product-image-placeholder"></div>
-                <div class="product-info">
-                    <span class="product-category">Urbana</span>
-                    <h3 class="product-name">Bicicleta Urbana Pro</h3>
-                    <p class="product-price">R$ 1.299,00</p>
-                    <a href="#" class="btn-ver-produto">Ver produto</a>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <td width="31%"><b><span class="stat-number">500+</span></b><br>
+                            <span class="stat-label">Produtos</span>
+                        </td>
+                    </div>
+                    <div class="stat-item">
+                        <td width="31%"><b><span class="stat-number">15 Anos</span></b><br>
+                            <span class="stat-label">de Experiência</span>
+                        </td>
+                    </div>
+                    <div class="stat-item">
+                        <td width="31%"><b><span class="stat-number">12.000+</span></b><br>
+                            <span class="stat-label">Clientes Satisfeitos</span>
+                        </td>
+                    </div>
+                    <div class="stat-item">
+                        <td width="31%"><b><span class="stat-number">Frete Grátis</span></b><br>
+                            <span class="stat-label">Acima de R$299</span>
+                        </td>
+                    </div>
                 </div>
-            </article>
-
-            <article class="product-card">
-                <div class="product-image-placeholder"></div>
-                <div class="product-info">
-                    <span class="product-category">Urbana</span>
-                    <h3 class="product-name">Bicicleta Urbana Pro</h3>
-                    <p class="product-price">R$ 1.299,00</p>
-                    <a href="#" class="btn-ver-produto">Ver produto</a>
-                </div>
-            </article>
-
-            <article class="product-card">
-                <div class="product-image-placeholder"></div>
-                <div class="product-info">
-                    <span class="product-category">Urbana</span>
-                    <h3 class="product-name">Bicicleta Urbana Pro</h3>
-                    <p class="product-price">R$ 1.299,00</p>
-                    <a href="#" class="btn-ver-produto">Ver produto</a>
-                </div>
-            </article>
-
-            <article class="product-card">
-                <div class="product-image-placeholder"></div>
-                <div class="product-info">
-                    <span class="product-category">Urbana</span>
-                    <h3 class="product-name">Bicicleta Urbana Pro</h3>
-                    <p class="product-price">R$ 1.299,00</p>
-                    <a href="#" class="btn-ver-produto">Ver produto</a>
-                </div>
-            </article>
-
-            <article class="product-card">
-                <div class="product-image-placeholder"></div>
-                <div class="product-info">
-                    <span class="product-category">Urbana</span>
-                    <h3 class="product-name">Bicicleta Urbana Pro</h3>
-                    <p class="product-price">R$ 1.299,00</p>
-                    <a href="#" class="btn-ver-produto">Ver produto</a>
-                </div>
-            </article>
-
-            <article class="product-card">
-                <div class="product-image-placeholder"></div>
-                <div class="product-info">
-                    <span class="product-category">Urbana</span>
-                    <h3 class="product-name">Bicicleta Urbana Pro</h3>
-                    <p class="product-price">R$ 1.299,00</p>
-                    <a href="#" class="btn-ver-produto">Ver produto</a>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-    <!--  PARCEIROS/PROPAGANDA -->
-    <section class="partners">
-        <p class="partners-tagline">Parceiros</p>
-        <h2 class="section-title">Marcas Parceiras</h2>
-
-        <div class="partners-grid">
-            <div class="partner-item">
-                <div class="partner-image-placeholder"></div>
-                <p class="partner-label">Propaganda 1</p>
-            </div>
-            <div class="partner-item">
-                <div class="partner-image-placeholder"></div>
-                <p class="partner-label">Propaganda 2</p>
-            </div>
-            <div class="partner-item">
-                <div class="partner-image-placeholder"></div>
-                <p class="partner-label">Propaganda 3</p>
-            </div>
-            <div class="partner-item">
-                <div class="partner-image-placeholder"></div>
-                <p class="partner-label">Propaganda 4</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- PARTE ONDE MOSTRA AS 15 BIKES MAIS VENDIDAS-->
-    <section class="best-sellers">
-        <h2 class="section-title">15 Bikes mais Vendidas</h2>
-
-        <table class="best-sellers-table">
-            <thead>
-                <tr>
-                    <th>Marca</th>
-                    <th>Tamanho</th>
-                    <th>Proporção / Aro</th>
-                    <th>Cor</th>
-                    <th>Preço</th>
-                </tr>
-            </thead>
-            <!-- Parte 1: Marca Caloi -->
-            <tbody class="table-group table-group-caloi">
-                <tr>
-                    <td class="brand-cell" rowspan="3">Caloi</td>
-                    <td>S (15")</td>
-                    <td>Aro 29 (1:1.2)</td>
-                    <td>Azul / Preto</td>
-                    <td>R$ 2.499,00</td>
-                </tr>
-                <tr>
-                    <td>M (17")</td>
-                    <td>Aro 29 (1:1.2)</td>
-                    <td>Cinza Metal</td>
-                    <td>R$ 2.899,00</td>
-                </tr>
-                <tr>
-                    <td>L (19")</td>
-                    <td>Aro 29 (1:1.3)</td>
-                    <td>Vermelho / Preto</td>
-                    <td>R$ 3.100,00</td>
-                </tr>
-            </tbody>
-
-            <!-- Parte 2: Marca Sense -->
-            <tbody class="table-group table-group-sense">
-                <tr>
-                    <td class="brand-cell" rowspan="3">Sense</td>
-                    <td>L (19")</td>
-                    <td>Aro 29 (1:1.1)</td>
-                    <td>Preto Fosco</td>
-                    <td>R$ 4.200,00</td>
-                </tr>
-                <tr>
-                    <td>M (17")</td>
-                    <td>Aro 29 (1:1.1)</td>
-                    <td>Preto Fosco</td>
-                    <td>R$ 4.100,00</td>
-                </tr>
-                <tr>
-                    <td>XL (21")</td>
-                    <td>Aro 29 (1:1.2)</td>
-                    <td>Azul Petróleo</td>
-                    <td>R$ 4.500,00</td>
-                </tr>
-            </tbody>
-
-            <!-- Parte 3: Categoria Road / Speed -->
-            <tbody class="table-group table-group-road-speed">
-                <tr class="table-category-row">
-                    <td colspan="5">CATEGORIA ROAD / SPEED</td>
-                </tr>
-                <tr>
-                    <td class="brand-cell" rowspan="2">Oggi</td>
-                    <td colspan="2">Quadro Integrado Aro 700c</td>
-                    <td>Vermelho Neon</td>
-                    <td>R$ 3.800,00</td>
-                </tr>
-                <tr>
-                    <td colspan="2">Aro 700c</td>
-                    <td colspan="2">Kit Prata / R$ 4.200,00</td>
-                </tr>
-                <tr>
-                    <td class="brand-cell" rowspan="2">Cannondale</td>
-                    <td>M (17")</td>
-                    <td>Aro 29 (1:1.0)</td>
-                    <td>Verde Lime</td>
-                    <td>R$ 8.900,00</td>
-                </tr>
-                <tr>
-                    <td>L (19")</td>
-                    <td>Aro 29 (1:1.0)</td>
-                    <td>Preto / Prata</td>
-                    <td>R$ 9.400,00</td>
-                </tr>
-            </tbody>
-
-            <!-- Parte 4: Lote Infantil -->
-            <tbody class="table-group table-group-infantil">
-                <tr class="table-category-row">
-                    <td colspan="5">LOTE INFANTIL</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Rosa / Branco</td>
-                    <td>R$ 1.200,00</td>
-                </tr>
-            </tbody>
-
-            <!-- Parte 5: Linhas Premium -->
-            <tbody class="table-group table-group-premium">
-                <tr>
-                    <td class="brand-cell">Specialized</td>
-                    <td>S (15")</td>
-                    <td>Aro 29 (1:1.2)</td>
-                    <td>Grafite</td>
-                    <td>R$ 6.500,00</td>
-                </tr>
-                <tr>
-                    <td class="brand-cell">Trek</td>
-                    <td>M (17")</td>
-                    <td>Aro 29 (1:1.1)</td>
-                    <td>Azul Marinho</td>
-                    <td>R$ 7.200,00</td>
-                </tr>
-            </tbody>
+            </tr>
         </table>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ===================== PRODUTOS EM DESTAQUE ===================== -->
+    <section class="featured-products">
+        <h4 class="section-title">Produtos em Destaque</h4>
+
+        <div class="products-grid">
+            <table>
+                <tr>
+                    <td width="33%">
+                        <article class="product-card">
+                            <img src="bicicleta-moderna-transparente-branco-isolado-fundo-png-fundo-branco-fundo-branco-hd-pho_873925-932662.jpg"
+                                alt="Bicicleta Urbana Pro" class="product-image" width="100%">
+                            <div class="product-info">
+                                <span class="product-category">Urbana</span>
+                                <h4 class="product-name">Bicicleta Urbana Pro</h4>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p class="product-price">R$ 1.299,00</p>
+                                        </td>
+                                        <td>
+                                            <form action="pagina-do-produto.html">
+                                                <input type="submit" name="btnProduto" value="Ver produto"
+                                                    class="btn-ver-produto">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </article>
+                    </td>
+
+                    <td width="33%">
+                        <article class="product-card">
+                            <img src="bicicleta-moderna-transparente-branco-isolado-fundo-png-fundo-branco-fundo-branco-hd-pho_873925-932662.jpg"
+                                alt="Bicicleta Urbana Pro" class="product-image" width="100%">
+                            <div class="product-info">
+                                <span class="product-category">Urbana</span>
+                                <h4 class="product-name">Bicicleta Urbana Pro</h4>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p class="product-price">R$ 1.299,00</p>
+                                        </td>
+                                        <td>
+                                            <form action="pagina-do-produto.html">
+                                                <input type="submit" name="btnProduto" value="Ver produto"
+                                                    class="btn-ver-produto">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </article>
+                    </td>
+
+                    <td width="33%">
+                        <article class="product-card">
+                            <img src="bicicleta-moderna-transparente-branco-isolado-fundo-png-fundo-branco-fundo-branco-hd-pho_873925-932662.jpg"
+                                alt="Bicicleta Urbana Pro" class="product-image" width="100%">
+                            <div class="product-info">
+                                <span class="product-category">Urbana</span>
+                                <h4 class="product-name">Bicicleta Urbana Pro</h4>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p class="product-price">R$ 1.299,00</p>
+                                        </td>
+                                        <td>
+                                            <form action="pagina-do-produto.html">
+                                                <input type="submit" name="btnProduto" value="Ver produto"
+                                                    class="btn-ver-produto">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </article>
+                    </td>
+
+                </tr>
+                <td width="33%">
+                    <article class="product-card">
+                        <img src="bicicleta-moderna-transparente-branco-isolado-fundo-png-fundo-branco-fundo-branco-hd-pho_873925-932662.jpg"
+                            alt="Bicicleta Urbana Pro" class="product-image" width="100%">
+                        <div class="product-info">
+                            <span class="product-category">Urbana</span>
+                            <h4 class="product-name">Bicicleta Urbana Pro</h4>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p class="product-price">R$ 1.299,00</p>
+                                    </td>
+                                    <td>
+                                        <form action="pagina-do-produto.html">
+                                            <input type="submit" name="btnProduto" value="Ver produto"
+                                                class="btn-ver-produto">
+                                        </form>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </article>
+                </td>
+
+                <td width="33%">
+                    <article class="product-card">
+                        <img src="bicicleta-moderna-transparente-branco-isolado-fundo-png-fundo-branco-fundo-branco-hd-pho_873925-932662.jpg"
+                            alt="Bicicleta Urbana Pro" class="product-image" width="100%">
+                        <div class="product-info">
+                            <span class="product-category">Urbana</span>
+                            <h4 class="product-name">Bicicleta Urbana Pro</h4>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p class="product-price">R$ 1.299,00</p>
+                                    </td>
+                                    <td>
+                                        <form action="pagina-do-produto.html">
+                                            <input type="submit" name="btnProduto" value="Ver produto"
+                                                class="btn-ver-produto">
+                                        </form>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </article>
+                </td>
+
+                <td width="33%">
+                    <article class="product-card">
+                        <img src="bicicleta-moderna-transparente-branco-isolado-fundo-png-fundo-branco-fundo-branco-hd-pho_873925-932662.jpg"
+                            alt="Bicicleta Urbana Pro" class="product-image" width="100%">
+                        <div class="product-info">
+                            <span class="product-category">Urbana</span>
+                            <h4 class="product-name">Bicicleta Urbana Pro</h4>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p class="product-price">R$ 1.299,00</p>
+                                    </td>
+                                    <td>
+                                        <form action="pagina-do-produto.html">
+                                            <input type="submit" name="btnProduto" value="Ver produto"
+                                                class="btn-ver-produto">
+                                        </form>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </article>
+                </td>
+
+                </tr>
+
+            </table>
+        </div>
+    </section>
+
+    <!-- ===================== PARCEIROS ===================== -->
+    <section class="partners">
+        <p class="partners-tagline" align="center">Parceiros</p>
+        <h4 class="section-title" align="center">Marcas Parceiras</h4>
+
+        <div class="partners-grid">
+            <table width="100%" cellspacing="20" border="0">
+                <tr>
+                    <div class="card-propaganda">
+                       <td width="25%" align="center">
+                            <a href="https://www.oakley.com/pt-br" target="_blank">
+                                <img src="images.png" alt="Propaganda da Marca">
+                            </a>
+                        </td> 
+                    </div>
+                    <div class="card-propaganda">
+                        <td width="25%" align="center">
+                            <a href="https://mauroribeirosports.com.br/" target="_blank">
+                                <img src="2.jpg" alt="Propaganda da Marca">
+                            </a>
+                        </td>
+                    </div>
+                    <div class="card-propaganda">
+                        <td width="25%" align="center">
+                            <a href="https://www.gatorade.lat/br" target="_blank">
+                                <img src="images3(1).png" alt="Propaganda da Marca">
+                            </a>
+                        </td>
+                    </div>
+                    <div class="card-propaganda">
+                        <td width="25%" align="center">
+                            <a href="https://www.kakau.com.br/" target="_blank">
+                                <img src="images4.jpg" alt="Propaganda da Marca">
+                            </a>
+                        </td>
+                    </div>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+    <!-- ===================== 15 BIKES MAIS VENDIDAS ===================== -->
+    <section class="best-sellers">
+        <h2 class="section-title" align="center">15 Bikes mais Vendidas</h2>
+
+        <table class="best-sellers-table" border="1" align="center">
+
+            <!-- Cabeçalho -->
+            <tr class="linha-cabecalho">
+                <th colspan="2">Marca</th>
+                <th>Tamanho</th>
+                <th>Proporção / Aro</th>
+                <th>Cor</th>
+                <th>Preço</th>
+            </tr>
+
+            <!-- Parte 1: Marca Caloi -->
+            <tr class="linha-caloi">
+                <th rowspan="3" colspan="2">Caloi</th>
+                <td align="center">S (15")</td>
+                <td align="center">Aro 29 (1:1.2)</td>
+                <td align="center">Azul / Preto</td>
+                <td align="center">R$ 2.499,00</td>
+            </tr>
+            <tr class="linha-caloi">
+                <td align="center">M (17")</td>
+                <td align="center">Aro 29 (1:1.2)</td>
+                <td align="center">Cinza Metal</td>
+                <td align="center">R$ 2.899,00</td>
+            </tr>
+            <tr class="linha-caloi">
+                <td align="center">L (19")</td>
+                <td align="center">Aro 29 (1:1.3)</td>
+                <td align="center">Vermelho / Preto</td>
+                <td align="center">R$ 3.100,00</td>
+            </tr>
+
+            <!-- Parte 2: Marca Sense -->
+            <tr class="linha-sense">
+                <th rowspan="3" colspan="2">Sense</th>
+                <td align="center">L (19")</td>
+                <td align="center">Aro 29 (1:1.1)</td>
+                <td align="center">Preto Fosco</td>
+                <td align="center">R$ 4.200,00</td>
+            </tr>
+            <tr class="linha-sense">
+                <td align="center">M (17")</td>
+                <td align="center">Aro 29 (1:1.1)</td>
+                <td align="center">Preto Fosco</td>
+                <td align="center">R$ 4.100,00</td>
+            </tr>
+            <tr class="linha-sense">
+                <td align="center">XL (21")</td>
+                <td align="center">Aro 29 (1:1.2)</td>
+                <td align="center">Azul Petróleo</td>
+                <td align="center">R$ 4.500,00</td>
+            </tr>
+
+            <!-- Parte 3: Categoria Road / Speed -->
+            <tr class="linha-categoria">
+                <th colspan="6">Categoria Road / Speed</th>
+            </tr>
+            <tr class="linha-road-speed">
+                <th rowspan="2" colspan="2">Oggi</th>
+                <td align="center" colspan="2">Quadro Integrado Aro 700c</td>
+                <td align="center">Vermelho Neon</td>
+                <td align="center">R$ 3.800,00</td>
+            </tr>
+            <tr class="linha-road-speed">
+                <td align="center" colspan="2">Aro 700c</td>
+                <td align="center" colspan="2">Kit Prata / R$ 4.200,00</td>
+            </tr>
+            <tr class="linha-road-speed">
+                <th rowspan="2" colspan="2">Cannondale</th>
+                <td align="center">M (17")</td>
+                <td align="center">Aro 29 (1:1.0)</td>
+                <td align="center">Verde Lime</td>
+                <td align="center">R$ 8.900,00</td>
+            </tr>
+            <tr class="linha-road-speed">
+                <td align="center">L (19")</td>
+                <td align="center">Aro 29 (1:1.0)</td>
+                <td align="center">Preto / Prata</td>
+                <td align="center">R$ 9.400,00</td>
+            </tr>
+
+            <!-- Parte 4: Lote Infantil -->
+            <tr class="linha-categoria">
+                <th colspan="6">Lote Infantil</th>
+            </tr>
+            <tr class="linha-infantil">
+                <th colspan="2"></th>
+                <td align="center"></td>
+                <td align="center"></td>
+                <td align="center">Rosa / Branco</td>
+                <td align="center">R$ 1.200,00</td>
+            </tr>
+
+            <!-- Parte 5: Linhas Premium -->
+            <tr class="linha-premium">
+                <th colspan="2">Specialized</th>
+                <td align="center">S (15")</td>
+                <td align="center">Aro 29 (1:1.2)</td>
+                <td align="center">Grafite</td>
+                <td align="center">R$ 6.500,00</td>
+            </tr>
+            <tr class="linha-premium">
+                <th colspan="2">Trek</th>
+                <td align="center">M (17")</td>
+                <td align="center">Aro 29 (1:1.1)</td>
+                <td align="center">Azul Marinho</td>
+                <td align="center">R$ 7.200,00</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
     <footer class="footer">
-        <div class="footer-brand">
-            <div class="footer-logo">SOFTBYKE</div>
-            <p class="footer-description">Sua loja especializada em bicicletas e peças. Qualidade, performance e estilo
-                para todos os ciclistas.</p>
-        </div>
+        <table align="center">
+            <tr>
+                <td border="1">
+                    <div class="footer-brand" align="left"><br><br><br>
+                        <div class="footer-logo">SOFTBYKE</div>
+                        <p class="footer-description">Sua loja especializada em bicicletas e peças. Qualidade,<br> performance eestilopara todos os ciclistas.</p>
+                    </div>
+                </td>
 
-        <div class="footer-nav">
-            <h3>Navegação</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="empresa.html">Empresa</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="documentos.html">Documentos</a></li>
-            </ul>
-        </div>
+                <td>
+                    <div class="footer-nav" align="center">
+                        <h3>Navegação</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="empresa.html">Empresa</a></li>
+                            <li><a href="catalogo.html">Catálogo</a></li>
+                            <li><a href="galeria.html">Galeria</a></li>
+                            <li><a href="documentos.html">Documentos</a></li>
+                        </ul>
+                    </div>
+                </td>
 
-        <div class="footer-academic">
-            <h3>Informações Academicas</h3>
-            <ul>
-                <li><strong>Curso:</strong> Ciência da Computação</li>
-                <li><strong>Disciplina:</strong> Desenvolvimento Web</li>
-                <li><strong>Turma:</strong> A</li>
-                <li><strong>Integrantes:</strong> Grazielle, Beatriz, Lara, Ana Júlia</li>
-            </ul>
-        </div>
+                <td>
+                    <div class="footer-academic" align="rigth">
+                        <h3>Informações Academicas</h3>
+                        <ul>
+                            <li><strong>Curso:</strong> Ciência da Computação</li>
+                            <li><strong>Disciplina:</strong> Desenvolvimento Web</li>
+                            <li><strong>Turma:</strong> A</li>
+                            <li><strong>Integrantes:</strong> Grazielle, Beatriz, Lara, Ana Júlia</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </footer>
 
-    <!--Link do bootstrap para interatividade e comportamento da página usando o JAVASCRIPT-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
 
 </html>
