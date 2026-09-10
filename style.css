@@ -1,43 +1,51 @@
-.grid-links {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
-  margin-top: 40px;
-}
+   .galeria-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px 60px 20px;
+    }
 
-/* Formatação do link para centralizar os itens */
-.card-link {
-  display: flex;
-  flex-direction: column; /* Coloca o H3 abaixo da imagem */
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  color: #111111;
-}
+    .grid-galeria {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 35px 25px; /* Espaçamento entre linhas e colunas */
+    }
 
-.logo-brand {
-  width: 100%; 
-  height: 140px; 
-  object-fit: contain; /* Mantém a proporção da logo sem distorcer */
-  background-color: #d9d9d9; /* Fundo cinza caso a logo tenha fundo transparente */
-  margin-bottom: 10px;
-}
+    .card-foto {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid;
+    }
 
-/* Formatação do texto do link */
-.card-link h3 {
-  font-size: 14px;
-  font-weight: 500;
-  margin: 0;
-}
+    .card-foto img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover; /* Evita que a imagem fique esticada ou deformada */
+      display: block;
+    }
 
-@media (max-width: 900px) {
-  .grid-links {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+    .card-foto figcaption {
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      border-top: 1px solid;
+    }
 
-@media (max-width: 600px) {
-  .grid-links {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (max-width: 900px){
+      .grid-galeria{
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px){
+      .grid-container{
+        padding: 0 15px 40px 15px; /* Reduz um pouco o padding lateral no celular */
+      }
+      .grid-galeria{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px; /* diminui espaçamento das imagens em telas mto estreitas */
+      }
+    }
