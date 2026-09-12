@@ -6,60 +6,30 @@
     <title>Catálogo Completo | SOFTBYKE</title>
 
     <link rel="stylesheet" href="css/homepage.css">
-
-    <!--
-        O CSS abaixo define APENAS a estrutura de layout
-        (menu lateral fixo à esquerda + conteúdo ao lado, do jeito
-        que aparece na imagem de referência). Nenhuma cor, fonte,
-        sombra ou estilo visual foi definido.
-    -->
-    <style>
-        #catalogo-container {
-            display: flex;
-            align-items: flex-start;
-            gap: 2rem;
-        }
-
-        #menu-catalogo {
-            flex: 0 0 260px;
-            position: sticky;
-            top: 1rem;
-        }
-
-        #menu-catalogo ol {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        #conteudo-catalogo {
-            flex: 1 1 auto;
-            min-width: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/catalogo.css">
 </head>
 <body>
 
      <header class="navbar">
-        <table>
+        <table class="navbar-table">
             <tr>
-                <td class="navbar-logo" width="5%">SOFTBYKE</td>
+                <td class="navbar-logo">SOFTBYKE</td>
 
-                <td width="10%">
+                <td class="navbar-search-cell">
                     <form class="navbar-search" role="search">
                         <input type="search" name="busca" size="35" placeholder="Buscar produtos...">
                     </form>
                 </td>
 
-                <td width="15%"><a href="homepage.html">Home</a></td>
-                <td width="15%"><a href="empresa.html">Empresa</a></td>
-                <td width="15%"><a href="catalogo.html">Catálogo</a></td>
-                <td width="15%"><a href="galeria.html">Galeria</a></td>
-                <td width="15%"><a href="documentos.html">Documentos</a></td>
+                <td class="navbar-link"><a href="homepage.html">Home</a></td>
+                <td class="navbar-link"><a href="empresa.html">Empresa</a></td>
+                <td class="navbar-link"><a href="catalogo.html">Catálogo</a></td>
+                <td class="navbar-link"><a href="galeria.html">Galeria</a></td>
+                <td class="navbar-link"><a href="documento.html">Documentos</a></td>
             </tr>
         </table>
     </header>
-    <hr>
+    <hr class="navbar-divider">
 
     <main>
 
@@ -1157,10 +1127,10 @@
     </main>
     <hr>
     <footer class="footer">
-        <table width="100%">
+        <table width="100%" class="footer-table">
             <tr valign="top">
                 <td width="33%">
-                    <table border="1" cellpadding="6">
+                    <table border="1" cellpadding="6" class="footer-logo-table">
                         <tr>
                             <td>SOFTBYKE</td>
                         </tr>
@@ -1172,11 +1142,11 @@
                 <td width="33%">
                     <h3>Navegação</h3>
                     <ul>
-                        <li><a href="../homepage.html">Home</a></li>
+                        <li><a href="homepage.html">Home</a></li>
                         <li><a href="empresa.html">Empresa</a></li>
                         <li><a href="catalogo.html">Catálogo</a></li>
                         <li><a href="galeria.html">Galeria</a></li>
-                        <li><a href="documentos.html">Documentos</a></li>
+                        <li><a href="documento.html">Documentos</a></li>
                     </ul>
                 </td>
  

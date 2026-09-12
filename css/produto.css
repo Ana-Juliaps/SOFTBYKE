@@ -1,0 +1,199 @@
+/* =====================================================
+   CSS EXCLUSIVO DA PÁGINA DE PRODUTO (produto.html)
+   Carregar DEPOIS do homepage.css.
+   Usa as mesmas variáveis definidas em homepage.css:
+   --header-bg, --text-brown, --btn-color, --stat-bg, --footer-bg
+   ===================================================== */
+
+/* ---------- Breadcrumb ---------- */
+.breadcrumb {
+    max-width: 1100px;
+    margin: 20px auto 0;
+    padding: 0 24px;
+    font-size: 0.85rem;
+    color: #8C876E;
+}
+
+.breadcrumb a {
+    color: var(--text-brown);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Seção principal do produto ---------- */
+.product-detail {
+    max-width: 1100px;
+    margin: 24px auto 0;
+    padding: 0 24px;
+}
+
+.product-detail-image {
+    border-radius: 12px;
+    object-fit: cover;
+    max-height: 420px;
+    background-color: #F5F1E8;
+}
+
+.product-detail td[width="60%"] {
+    padding-left: 36px;
+}
+
+.product-category {
+    display: inline-block;
+    color: var(--btn-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.product-detail-name {
+    color: var(--text-brown);
+    font-size: 1.8rem;
+    line-height: 1.25;
+    margin: 0 0 12px;
+}
+
+.product-rating {
+    color: #444;
+    font-size: 0.95rem;
+    margin: 0 0 14px;
+}
+
+.product-detail-price {
+    color: var(--text-brown);
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+
+.product-installments {
+    color: #777;
+    font-size: 0.85rem;
+    margin: 0 0 18px;
+}
+
+.product-description {
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    max-width: 620px;
+    margin: 0 0 22px;
+}
+
+/* Tabela de opções (cor / tamanho / aro) */
+.product-options {
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+
+.product-options th {
+    color: #8C876E;
+    font-weight: 600;
+    font-size: 0.88rem;
+    padding: 4px 14px 4px 0;
+    text-align: left;
+}
+
+.product-options td {
+    color: var(--text-brown);
+    font-weight: 600;
+    font-size: 0.88rem;
+    padding: 4px 0;
+}
+
+/* Botões de ação */
+.btn-comprar,
+.btn-carrinho {
+    border: none;
+    border-radius: 999px;
+    padding: 12px 28px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.btn-comprar {
+    background-color: var(--btn-color);
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.btn-comprar:hover {
+    opacity: 0.88;
+}
+
+.btn-carrinho {
+    background-color: #FFFFFF;
+    color: var(--text-brown);
+    border: 2px solid var(--btn-color);
+}
+
+.btn-carrinho:hover {
+    background-color: #FBF6EE;
+}
+
+/* ---------- Ficha técnica ---------- */
+.product-specs {
+    max-width: 1100px;
+    margin: 48px auto 0;
+    padding: 0 24px;
+}
+
+.product-specs .section-title {
+    color: var(--text-brown);
+    font-size: 1.4rem;
+    margin: 0 0 18px;
+}
+
+.specs-table {
+    width: 100%;
+    max-width: 760px;
+    border-collapse: collapse;
+    border: 1px solid #E7E1D4 !important;
+}
+
+.specs-table th,
+.specs-table td {
+    border: 1px solid #E7E1D4;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.specs-table th {
+    background-color: #F5F1E8;
+    color: var(--text-brown);
+    width: 220px;
+    font-weight: 600;
+}
+
+.specs-table td {
+    color: #444;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 760px) {
+    .product-detail table,
+    .product-detail tbody,
+    .product-detail tr,
+    .product-detail td {
+        display: block;
+        width: 100% !important;
+    }
+
+    .product-detail td[width="60%"] {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .product-detail-image {
+        max-height: 280px;
+        width: 100%;
+    }
+}
