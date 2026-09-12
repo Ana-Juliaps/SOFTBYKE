@@ -1,7 +1,410 @@
-.product-image {
-    width: 100%;
-    height: auto;
-    display: block;
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Cores Globais Baseadas na Página da Empresa */
+:root {
+    --header-bg: #AA8665;
+    --text-brown: #665243;
+    --btn-color: #C99E73;
+    --stat-bg: #899672;
+    --footer-bg: #9BA483;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background-color: var(--header-bg);
+    padding: 15px 20px;
+}
+
+.navbar-table {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.navbar-logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    padding-right: 20px;
+}
+
+.navbar-search-cell {
+    padding-right: 30px;
+}
+
+.navbar-search input[type="search"] {
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    color: #ffffff;
+    outline: none;
+    font-size: 14px;
+}
+
+.navbar-search input[type="search"]::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-link {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.navbar-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.navbar-link a:hover {
+    opacity: 0.8;
+}
+
+.navbar-divider {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* ================= HERO BANNER ================= */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Aumentado para dar mais respiro à bike */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/banner_homepage.jpg');
+    background-position: center 60%; /* Ajusta o foco vertical da bicicleta */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+.hero-subtitle {
+    color: #f0f0f0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+
+/* ================= HERO2 (ESTATÍSTICAS) ================= */
+.hero2 {
+    background-color: var(--stat-bg);
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.stat-number {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* ================= MAIN CONTENT ================= */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    text-align: left;
+    color: var(--text-brown);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* ================= CARDS DE PRODUTOS ================= */
+.featured-products {
+    margin-bottom: 50px;
+}
+
+.products-grid td {
+    vertical-align: top;
+    height: 100%;
+    padding: 10px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Container com fundo 100% branco para igualar ao fundo original de cada foto */
+.product-image-container {
+    background-color: #ffffff;
+    width: 100%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Garante que a bicicleta inteira apareça centralizada e sem cortes */
+.product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: transparent;
+    padding: 0;
+}
+
+.product-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-category {
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.product-name {
+    font-size: 14px;
+    color: #222;
+    margin-bottom: 15px;
+    height: 40px; 
+    line-height: 1.3;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.product-info table {
+    width: 100%;
+    margin-top: auto;
+    border-collapse: collapse;
+}
+
+.product-info table td {
+    padding: 0;
+    vertical-align: middle;
+}
+
+.product-price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.btn-ver-produto {
+    background-color: var(--btn-color);
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-ver-produto:hover {
+    opacity: 0.9;
+}
+
+/* ================= PARCEIROS ================= */
+.partners {
+    margin-bottom: 50px;
+}
+
+.partners-tagline {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.partners .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-propaganda {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0; /* Remove padding interno para o link e a imagem ocuparem a área total */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Garante que a imagem respeite as bordas arredondadas */
+    width: 100%;
+}
+
+.card-propaganda a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.card-propaganda img {
+    width: 100%;
+    height: 180px; /* Altura maior para expandir as marcas */
+    object-fit: cover; /* Faz as imagens quadradas (Mauro Ribeiro, Gatorade, Kakau) preencherem a caixa */
+}
+
+/* ================= TABELA MAIS VENDIDAS ================= */
+.best-sellers {
+    margin-bottom: 30px;
+}
+
+.best-sellers .section-title {
+    text-align: center;
+}
+
+.tabela-vendas {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin: 0 auto;
+}
+
+.tabela-vendas .header-row {
+    background-color: var(--text-brown);
+    color: #ffffff;
+}
+
+.tabela-vendas th, .tabela-vendas td {
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+}
+
+.brand-cell {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+}
+
+.dark-cell {
+    background-color: #333;
+    color: #fff;
+}
+
+.highlight-cell {
+    background-color: #f7f3eb;
+}
+
+.highlight-gray {
+    background-color: #e2e2e2;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: var(--footer-bg);
+    padding: 40px 20px;
+    color: #ffffff;
+}
+
+.footer-table {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.footer-table td {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.footer-logo-table {
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    display: inline-table;
+}
+
+.footer-logo-table td {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 6px 14px;
+    color: #ffffff;
+}
+
+.footer-description {
+    line-height: 1.5;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.footer a:hover {
+    opacity: 0.8;
+}
 
