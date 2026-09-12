@@ -23,66 +23,67 @@ body {
     --footer-bg: #9BA483;
 }
 
-/* ================= HEADER ================= */
-.header {
+/* ================= NAVBAR (COM TABELA) ================= */
+.navbar {
     background-color: var(--header-bg);
-    padding: 20px 0;
+    padding: 15px 20px;
 }
 
-.header-container {
+.navbar-table {
+    width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+    border-collapse: collapse;
 }
 
-.logo {
+.navbar-logo {
     color: #ffffff;
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 1px;
+    white-space: nowrap;
+    padding-right: 20px;
 }
 
-.search-container {
-    display: flex;
-    align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    padding: 5px 15px;
-    width: 300px;
+.navbar-search-cell {
+    padding-right: 30px;
 }
 
-.search-icon {
-    width: 16px;
-    height: 16px;
-    color: rgba(255, 255, 255, 0.8);
-    margin-right: 8px;
-}
-
-.search-container input {
-    background: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
+.navbar-search input[type="search"] {
     width: 100%;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    color: #ffffff;
+    outline: none;
+    font-size: 14px;
 }
 
-.search-container input::placeholder {
+.navbar-search input[type="search"]::placeholder {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.nav-menu ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+.navbar-link {
+    text-align: center;
+    white-space: nowrap;
 }
 
-.nav-menu a {
+.navbar-link a {
     color: #ffffff;
     text-decoration: none;
     font-size: 15px;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.navbar-link a:hover {
+    opacity: 0.8;
+}
+
+.navbar-divider {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* ================= BANNER (LARGURA TOTAL 100%) ================= */
@@ -324,92 +325,69 @@ body {
     border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-/* ================= FOOTER ================= */
+/* ================= FOOTER (ESTRUTURADO EM TABELA) ================= */
 .footer {
-    background-color: var(--footer-bg); /* Mantém o fundo verde original */
-    padding: 50px 0;
-    color: #ffffff; /* Define toda a fonte do rodapé para branco */
+    background-color: var(--footer-bg);
+    padding: 40px 20px;
+    color: #ffffff;
 }
 
-.footer-container {
+.footer-table {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0 20px;
-    gap: 40px;
+    border-collapse: collapse;
 }
 
-/* Coluna 1: Logo com borda e descrição */
-.footer-about {
-    flex: 1.2;
-}
-
-.footer-logo-box {
-    display: inline-block;
-    border: 1px solid #ffffff;
-    padding: 8px 16px;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+.footer-table td {
     color: #ffffff;
-}
-
-.footer-about p {
     font-size: 14px;
-    line-height: 1.5;
+}
+
+.footer-logo-table {
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    display: inline-table;
+}
+
+.footer-logo-table td {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 6px 14px;
     color: #ffffff;
 }
 
-/* Coluna 2: Links de Navegação */
-.footer-links {
-    flex: 1;
+.footer-description {
+    line-height: 1.5;
+    font-size: 14px;
+    color: #ffffff;
 }
 
-.footer-links h4 {
+.footer h3 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 15px;
     color: #ffffff;
 }
 
-.footer-links ul {
+.footer ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-links li {
+.footer li {
     margin-bottom: 8px;
+    line-height: 1.5;
+    color: #ffffff;
 }
 
-.footer-links a {
+.footer a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 14px;
     transition: opacity 0.2s;
 }
 
-.footer-links a:hover {
+.footer a:hover {
     opacity: 0.8;
-}
-
-/* Coluna 3: Informações Acadêmicas */
-.footer-academic {
-    flex: 1.5;
-}
-
-.footer-academic h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #ffffff;
-}
-
-.footer-academic p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 8px;
-    color: #ffffff;
 }

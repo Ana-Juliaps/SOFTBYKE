@@ -5,43 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOFTBYKE</title>
-    <link rel="stylesheet" href="estilo_empresa.css">
+    <link rel="stylesheet" href="./css/estilo_empresa.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
 
     <!-- Cabeçalho -->
-    <header class="header">
-        <div class="header-container">
-            <div class="logo">SOFTBYKE</div>
+    <header class="navbar">
+        <table class="navbar-table">
+            <tr>
+                <td class="navbar-logo">SOFTBYKE</td>
 
-            <div class="search-container">
-                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
-                <input type="text" placeholder="Buscar...">
-            </div>
+                <td class="navbar-search-cell">
+                    <form class="navbar-search" role="search">
+                        <input type="search" name="busca" placeholder="Buscar produtos...">
+                    </form>
+                </td>
 
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Empresa</a></li>
-                    <li><a href="#">Catálogo</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Documentos</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+                <td class="navbar-link"><a href="../homepage.html">Home</a></td>
+                <td class="navbar-link"><a href="empresa.html">Empresa</a></td>
+                <td class="navbar-link"><a href="catalogo.html">Catálogo</a></td>
+                <td class="navbar-link"><a href="galeria.html">Galeria</a></td>
+                <td class="navbar-link"><a href="documentos.html">Documentos</a></td>
+            </tr>
+        </table>
     </header>
+    <hr class="navbar-divider">
 
     <!-- Conteúdo Principal -->
     <!-- Banner Full Width  -->
     <div class="sobre-banner">
-        <img src="imagem_oficina_banner.jpg" alt="Oficina SOFTBYKE">
+        <img src="./img/imagens_empresa/imagem_oficina_banner.jpg" alt="Oficina SOFTBYKE">
         <h1 class="banner-title">SOBRE A SOFTBYKE</h1>
     </div>
 
@@ -51,7 +47,7 @@
 
             <div class="sobre-container">
                 <div class="sobre-imagem">
-                    <img src="imagem_fundadores.jpg" alt="Oficina Softbyke">
+                    <img src="./img/imagens_empresa/imagem_fundadores.jpg" alt="Oficina Softbyke">
                 </div>
                 <div class="sobre-texto" align="justify">
                     <h2>De uma paixão a uma referência nacional</h2>
@@ -277,35 +273,42 @@
 
     <!-- Rodapé -->
     <footer class="footer">
-        <div class="footer-container">
-            <!-- Coluna 1: Logo e Descrição -->
-            <div class="footer-about">
-                <div class="footer-logo-box">SOFTBYKE</div>
-                <p>Sua loja especializada em bicicletas e peças. Qualidade, performance e estilo para todos os
-                    ciclistas.</p>
-            </div>
+        <table width="100%" class="footer-table">
+            <tr valign="top">
+                <td width="33%">
+                    <table border="1" cellpadding="6" class="footer-logo-table">
+                        <tr>
+                            <td>SOFTBYKE</td>
+                        </tr>
+                    </table>
+                    <p class="footer-description">Sua loja especializada em bicicletas e peças. Qualidade,
+                        <br>performance
+                        e estilo para todos os ciclistas.
+                    </p>
+                </td>
 
-            <!-- Coluna 2: Navegação -->
-            <div class="footer-links">
-                <h4>Navegação</h4>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Empresa</a></li>
-                    <li><a href="#">Catálogo</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Documentos</a></li>
-                </ul>
-            </div>
+                <td width="33%">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="../homepage.html">Home</a></li>
+                        <li><a href="empresa.html">Empresa</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="documentos.html">Documentos</a></li>
+                    </ul>
+                </td>
 
-            <!-- Coluna 3: Informações Acadêmicas -->
-            <div class="footer-academic">
-                <h4>Informações Acadêmicas</h4>
-                <p><strong>Curso:</strong> Ciência da Computação</p>
-                <p><strong>Disciplina:</strong> Desenvolvimento Web</p>
-                <p><strong>Turma:</strong> A</p>
-                <p><strong>Integrantes:</strong> Grazielle, Beatriz, Lara, Ana Júlia</p>
-            </div>
-        </div>
+                <td width="33%">
+                    <h3>Informações Academicas</h3>
+                    <ul>
+                        <li><strong>Curso:</strong> Ciência da Computação</li>
+                        <li><strong>Disciplina:</strong> Desenvolvimento Web</li>
+                        <li><strong>Turma:</strong> A</li>
+                        <li><strong>Integrantes:</strong> Grazielle, Beatriz, Lara, Ana Júlia</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
     </footer>
 
 </body>
