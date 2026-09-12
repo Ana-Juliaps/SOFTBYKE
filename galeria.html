@@ -1,141 +1,217 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
 </head>
+
 <body id="topo">
     <!-- GALERIA PAGE -->
-     <header class="navbar">
-        <table>
+    <header class="navbar">
+        <table class="navbar-table">
             <tr>
-                <td class="navbar-logo" width="5%">SOFTBYKE</td>
+                <td class="navbar-logo">SOFTBYKE</td>
 
-                <td width="10%">
+                <td class="navbar-search-cell">
                     <form class="navbar-search" role="search">
-                        <input type="search" name="busca" size="35" placeholder="Buscar produtos...">
+                        <input type="search" name="busca" placeholder="Buscar produtos...">
                     </form>
                 </td>
 
-                <td width="15%"><a href="homepage.html">Home</a></td>
-                <td width="15%"><a href="empresa.html">Empresa</a></td>
-                <td width="15%"><a href="catalogo.html">Catálogo</a></td>
-                <td width="15%"><a href="galeria.html">Galeria</a></td>
-                <td width="15%"><a href="documentos.html">Documentos</a></td>
+                <td class="navbar-link"><a href="../homepage.html">Home</a></td>
+                <td class="navbar-link"><a href="empresa.html">Empresa</a></td>
+                <td class="navbar-link"><a href="catalogo.html">Catálogo</a></td>
+                <td class="navbar-link"><a href="galeria.html">Galeria</a></td>
+                <td class="navbar-link"><a href="documentos.html">Documentos</a></td>
             </tr>
         </table>
     </header>
-    <hr>
+    <hr class="navbar-divider">
     <div class="galeria-apresentacao">
-        <span class="subtitulo">Imagens</span>
+        <br>
+        <br>
         <h1>Galeria</h1>
         <p class="descricao">Registros dos nossos produtos, clientes, eventos e o universo SOFTBYKE em imagens.</p>
     </div>
     <br>
     <main class="galeria-container">
         <div class="grid-galeria">
-            
+
             <div class="card-foto">
-                <img src="./img/foto1.jpg" alt="Um ciclista de mountain bike realiza uma curva acentuada e em alta velocidade em uma trilha de terra batida." width="300"><figcaption>Ciclista em uma mountain bike</figcaption>
+                <img src="./img/foto1.jpg"
+                    alt="Um ciclista de mountain bike realiza uma curva acentuada e em alta velocidade em uma trilha de terra batida."
+                    width="300">
+                <figcaption>Ciclista em uma mountain bike</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="./img/foto2.jpg" alt="Homem comum andando em sua bicicleta pela cidade." width="300"><figcaption>Uso de bicileta na rotina</figcaption>
+                <img src="./img/foto2.jpg" alt="Homem comum andando em sua bicicleta pela cidade." width="300">
+                <figcaption>Uso de bicileta na rotina</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="./img/foto3.jpg" alt="Um ciclista de estrada vestindo uniforme vermelho e preto pedala em alta velocidade por uma rodovia asfaltada. Equipado com capacete e óculos esportivos, ele adota uma postura aerodinâmica debruçado sobre a bicicleta preta, emoldurado por uma paisagem de montanhas e céu ensolarado ao fundo." width="300"><figcaption>Ciclista de estrada</figcaption>
+                <img src="./img/foto3.jpg"
+                    alt="Um ciclista de estrada vestindo uniforme vermelho e preto pedala em alta velocidade por uma rodovia asfaltada. Equipado com capacete e óculos esportivos, ele adota uma postura aerodinâmica debruçado sobre a bicicleta preta, emoldurado por uma paisagem de montanhas e céu ensolarado ao fundo."
+                    width="300">
+                <figcaption>Ciclista de estrada</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="./img/foto4.jpg" alt="O interior de uma loja de bicicletas moderna e bem iluminada, com destaque para um painel de madeira clara onde diversas bicicletas estão expostas na parede. Abaixo, alinhados em balcões e prateleiras escuras, capacetes, garrafas e acessórios ciclísticos aparecem organizados de forma impecável." width="300"><figcaption>Loja de bicicletas</figcaption>
+                <img src="./img/foto4.jpg"
+                    alt="O interior de uma loja de bicicletas moderna e bem iluminada, com destaque para um painel de madeira clara onde diversas bicicletas estão expostas na parede. Abaixo, alinhados em balcões e prateleiras escuras, capacetes, garrafas e acessórios ciclísticos aparecem organizados de forma impecável."
+                    width="300">
+                <figcaption>Loja de bicicletas</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto5.jpg" alt="Um close-up macro e detalhado do cubo preto fosco de uma roda dianteira de bicicleta, com o logotipo 'SHIMANO' em branco claramente visível. Raios pretos irradiam da peça central, e um rotor de freio a disco prateado e perfurado está posicionado à direita. O fundo é um suave bokeh verde e amarelo de folhagem ao ar livre, criando uma imagem de qualidade profissional." width="300"><figcaption>Roda dianteira da SHIMANO</figcaption>
+                <img src="img/foto5.jpg"
+                    alt="Um close-up macro e detalhado do cubo preto fosco de uma roda dianteira de bicicleta, com o logotipo 'SHIMANO' em branco claramente visível. Raios pretos irradiam da peça central, e um rotor de freio a disco prateado e perfurado está posicionado à direita. O fundo é um suave bokeh verde e amarelo de folhagem ao ar livre, criando uma imagem de qualidade profissional."
+                    width="300">
+                <figcaption>Roda dianteira da SHIMANO</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto6.jpg" alt="Jovem sorridente andando de bicicleta elétrica preta em um caminho de parque pavimentado." width="300"><figcaption>Uso de e-bike ao ar livre</figcaption>
+                <img src="img/foto6.jpg"
+                    alt="Jovem sorridente andando de bicicleta elétrica preta em um caminho de parque pavimentado."
+                    width="300">
+                <figcaption>Uso de e-bike ao ar livre</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto7.jpg" alt="Uma mountain bike preta parou em uma trilha de terra tortuosa que se aprofunda em uma densa e vibrante floresta verde, sob a luz filtrada do sol." width="300"><figcaption>Mountain bike em uma trilha na floresta</figcaption>
+                <img src="img/foto7.jpg"
+                    alt="Uma mountain bike preta parou em uma trilha de terra tortuosa que se aprofunda em uma densa e vibrante floresta verde, sob a luz filtrada do sol."
+                    width="300">
+                <figcaption>Mountain bike em uma trilha na floresta</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto8.jpg" alt="Um pelotão de ciclistas de estrada navega por uma estrada de montanha sinuosa e cênica em um dia claro e ensolarado." width="300"><figcaption>Pelotão de ciclistas em estrada</figcaption>
+                <img src="img/foto8.jpg"
+                    alt="Um pelotão de ciclistas de estrada navega por uma estrada de montanha sinuosa e cênica em um dia claro e ensolarado."
+                    width="300">
+                <figcaption>Pelotão de ciclistas em estrada</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto9.jpg" alt="Uma menina de capacete rosa ri alegremente em sua bicicleta rosa, enquanto sua mãe sorridente a encoraja com os braços abertos em um parque ensolarado." width="300"><figcaption>Bicleta Infantil para lazer</figcaption>
+                <img src="img/foto9.jpg"
+                    alt="Uma menina de capacete rosa ri alegremente em sua bicicleta rosa, enquanto sua mãe sorridente a encoraja com os braços abertos em um parque ensolarado."
+                    width="300">
+                <figcaption>Bicleta Infantil para lazer</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto10.jpg" alt="Close-up de um mecânico de bicicletas focado, vestindo um avental de brim e luvas pretas, ajustando com precisão o câmbio traseiro de uma bicicleta de montanha. Ele usa uma pequena chave Allen para o trabalho. A roda traseira, o cassete e o rotor do freio a disco estão visíveis em primeiro plano, com o fundo desfocado de uma oficina bem equipada e organizada." width="300"><figcaption>Ajustando o câmbio traseiro de uma bicicleta de montanha</figcaption>
+                <img src="img/foto10.jpg"
+                    alt="Close-up de um mecânico de bicicletas focado, vestindo um avental de brim e luvas pretas, ajustando com precisão o câmbio traseiro de uma bicicleta de montanha. Ele usa uma pequena chave Allen para o trabalho. A roda traseira, o cassete e o rotor do freio a disco estão visíveis em primeiro plano, com o fundo desfocado de uma oficina bem equipada e organizada."
+                    width="300">
+                <figcaption>Ajustando o câmbio traseiro de uma bicicleta de montanha</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto11.jpg" alt="Um close-up nítido e aerodinâmico de uma moderna bicicleta de estrada de fibra de carbono preta brilhante. O guidão, o quadro e as rodas com pneus de parede marrom estão em foco, com uma estrada montanhosa sinuosa e falésias de calcário no fundo desfocado." width="300"><figcaption>Bicicleta de estrada de fibra de carbono</figcaption>
+                <img src="img/foto11.jpg"
+                    alt="Um close-up nítido e aerodinâmico de uma moderna bicicleta de estrada de fibra de carbono preta brilhante. O guidão, o quadro e as rodas com pneus de parede marrom estão em foco, com uma estrada montanhosa sinuosa e falésias de calcário no fundo desfocado."
+                    width="300">
+                <figcaption>Bicicleta de estrada de fibra de carbono</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto12.jpg" alt="Um ciclista focado, vestindo equipamento de ciclismo preto e capacete, pedala ao longo de uma estrada costeira sinuosa com montanhas e o mar ao fundo." width="300"><figcaption>Equipamentos de ciclismo em estradas</figcaption>
+                <img src="img/foto12.jpg"
+                    alt="Um ciclista focado, vestindo equipamento de ciclismo preto e capacete, pedala ao longo de uma estrada costeira sinuosa com montanhas e o mar ao fundo."
+                    width="300">
+                <figcaption>Equipamentos de ciclismo em estradas</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto13.jpg" alt="Um ciclista de BMX Freestyle realizando uma manobra aérea em uma pista de skate (skatepark). Ele está suspenso no ar com sua bicicleta preta, vestindo uma camiseta branca, calça escura, tênis pretos e um boné virado para trás." width="300"><figcaption>Ciclista de BMX Freestyle</figcaption>
+                <img src="img/foto13.jpg"
+                    alt="Um ciclista de BMX Freestyle realizando uma manobra aérea em uma pista de skate (skatepark). Ele está suspenso no ar com sua bicicleta preta, vestindo uma camiseta branca, calça escura, tênis pretos e um boné virado para trás."
+                    width="300">
+                <figcaption>Ciclista de BMX Freestyle</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto14.png" alt="Close-up detalhado do garfo de suspensão dianteira de uma mountain bike de alta performance." width="300"><figcaption>Garfo de suspensão dianteira de uma mountain bike</figcaption>
+                <img src="img/foto14.png"
+                    alt="Close-up detalhado do garfo de suspensão dianteira de uma mountain bike de alta performance."
+                    width="300">
+                <figcaption>Garfo de suspensão dianteira de uma mountain bike</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto15.png" alt="Composição em estilo flat lay mostrando um conjunto de equipamentos de ciclismo de alta performance, todos em um elegante tom preto fosco. Os itens estão organizados sobre uma superfície de concreto ou pedra cinza claro texturizada, criando um forte contraste visual." width="300"><figcaption>Equipamentos de ciclismo</figcaption>
+                <img src="img/foto15.png"
+                    alt="Composição em estilo flat lay mostrando um conjunto de equipamentos de ciclismo de alta performance, todos em um elegante tom preto fosco. Os itens estão organizados sobre uma superfície de concreto ou pedra cinza claro texturizada, criando um forte contraste visual."
+                    width="300">
+                <figcaption>Equipamentos de ciclismo</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto16.png" alt=" Moderna estação de recarga de baterias para bicicletas elétricas (e-bikes) em um ambiente urbano contemporâneo. O totem de recarga possui um design sofisticado em preto fosco e está posicionado em frente a uma parede de painéis escuros." width="300"><figcaption>Recarga de bateria para bicicletas elétricas</figcaption>
+                <img src="img/foto16.png"
+                    alt=" Moderna estação de recarga de baterias para bicicletas elétricas (e-bikes) em um ambiente urbano contemporâneo. O totem de recarga possui um design sofisticado em preto fosco e está posicionado em frente a uma parede de painéis escuros."
+                    width="300">
+                <figcaption>Recarga de bateria para bicicletas elétricas</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto17.png" alt=" Casal andando de bicicleta lado a lado durante o pôr do sol em uma ciclovia à beira-mar. A foto é tirada de costas, acompanhando o movimento dos ciclistas em direção à luz do sol." width="300"><figcaption>Casal de ciclistas ao ar livre</figcaption>
+                <img src="img/foto17.png"
+                    alt=" Casal andando de bicicleta lado a lado durante o pôr do sol em uma ciclovia à beira-mar. A foto é tirada de costas, acompanhando o movimento dos ciclistas em direção à luz do sol."
+                    width="300">
+                <figcaption>Casal de ciclistas ao ar livre</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto18.png" alt=" Sessão profissional de Bike Fit, um processo de ajuste personalizado da bicicleta para melhorar o desempenho e o conforto do ciclista. A sessão ocorre em um estúdio especializado e moderno, com paredes cinzas e a inscrição 'PRECISION BIKE FIT' ao fundo." width="300"><figcaption>Bicicleta de estrada (road bike), em um rolo de treino estático</figcaption>
+                <img src="img/foto18.png"
+                    alt=" Sessão profissional de Bike Fit, um processo de ajuste personalizado da bicicleta para melhorar o desempenho e o conforto do ciclista. A sessão ocorre em um estúdio especializado e moderno, com paredes cinzas e a inscrição 'PRECISION BIKE FIT' ao fundo."
+                    width="300">
+                <figcaption>Bicicleta de estrada (road bike), em um rolo de treino estático</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto19.png" alt="Cena de ação extrema onde um ciclista de mountain bike avança em alta velocidade por uma trilha na lama. A foto transmite uma forte sensação de movimento e adrenalina." width="300"><figcaption>Ciclista em uma mountain bike com capecete full-face </figcaption>
+                <img src="img/foto19.png"
+                    alt="Cena de ação extrema onde um ciclista de mountain bike avança em alta velocidade por uma trilha na lama. A foto transmite uma forte sensação de movimento e adrenalina."
+                    width="300">
+                <figcaption>Ciclista em uma mountain bike com capecete full-face </figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto20.png" alt="Close-up detalhado do sistema de transmissão dianteiro de uma bicicleta, com foco principal no pedivela e nas coroas." width="300"><figcaption>Sistema de transmissão dianteiro de uma bicicleta</figcaption>
-            </div>
-            
-            <div class="card-foto">
-                <img src="img/foto21.png" alt=" Bicicleta clássica de estilo vintage presa a um bicicletário metálico em forma de 'U' invertido, localizada na calçada de uma rua urbana movimentada. " width="300"><figcaption>Bicicleta clássica presa a um bicicletário</figcaption>
-            </div>
-
-            <div class="card-foto">
-                <img src="img/foto22.png" alt=" Bicicleta infantil de cor rosa brilhante, projetada para crianças pequenas que estão aprendendo a pedalar. Ela está estacionada sobre uma calçada pavimentada em um parque ou área externa arborizada." width="300"><figcaption>Bicicleta infantil</figcaption>
+                <img src="img/foto20.png"
+                    alt="Close-up detalhado do sistema de transmissão dianteiro de uma bicicleta, com foco principal no pedivela e nas coroas."
+                    width="300">
+                <figcaption>Sistema de transmissão dianteiro de uma bicicleta</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto23.png" alt=" Fileira de camisas de ciclismo masculinas de alta performance organizadas em cabides de madeira em uma arara de roupas preta. As peças possuem um design minimalista e moderno, sem estampas grandes ou logotipos aparentes." width="300"><figcaption>Camisas de ciclismo masculinas</figcaption>
-            </div>
-            
-            <div class="card-foto">
-                <img src="img/foto24.png" alt="Cerimônia de pódio de uma competição da UCI Mountain Bike World Series, com três atletas celebrando suas conquistas." width="300"><figcaption>Cerimônia da UCI Mountain Bike World Series</figcaption>
+                <img src="img/foto21.png"
+                    alt=" Bicicleta clássica de estilo vintage presa a um bicicletário metálico em forma de 'U' invertido, localizada na calçada de uma rua urbana movimentada. "
+                    width="300">
+                <figcaption>Bicicleta clássica presa a um bicicletário</figcaption>
             </div>
 
             <div class="card-foto">
-                <img src="img/foto25.png" alt="Fachada moderna de uma loja de bicicletas chamada 'PEDALWORKS BICYCLE SHOP'. A loja possui uma identidade visual sofisticada, com acabamento em tons de preto e cinza-escuro." width="300"><figcaption>Loja PEDALWORKS BICYCLE SHOP</figcaption>
+                <img src="img/foto22.png"
+                    alt=" Bicicleta infantil de cor rosa brilhante, projetada para crianças pequenas que estão aprendendo a pedalar. Ela está estacionada sobre uma calçada pavimentada em um parque ou área externa arborizada."
+                    width="300">
+                <figcaption>Bicicleta infantil</figcaption>
+            </div>
+
+            <div class="card-foto">
+                <img src="img/foto23.png"
+                    alt=" Fileira de camisas de ciclismo masculinas de alta performance organizadas em cabides de madeira em uma arara de roupas preta. As peças possuem um design minimalista e moderno, sem estampas grandes ou logotipos aparentes."
+                    width="300">
+                <figcaption>Camisas de ciclismo masculinas</figcaption>
+            </div>
+
+            <div class="card-foto">
+                <img src="img/foto24.png"
+                    alt="Cerimônia de pódio de uma competição da UCI Mountain Bike World Series, com três atletas celebrando suas conquistas."
+                    width="300">
+                <figcaption>Cerimônia da UCI Mountain Bike World Series</figcaption>
+            </div>
+
+            <div class="card-foto">
+                <img src="img/foto25.png"
+                    alt="Fachada moderna de uma loja de bicicletas chamada 'PEDALWORKS BICYCLE SHOP'. A loja possui uma identidade visual sofisticada, com acabamento em tons de preto e cinza-escuro."
+                    width="300">
+                <figcaption>Loja PEDALWORKS BICYCLE SHOP</figcaption>
             </div>
         </div>
     </main>
@@ -143,27 +219,29 @@
     <div class="voltar-topo-container">
         <center>
             <a href="#topo" id="btnVoltarTopo" class="btn-voltar-topo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="18 15 12 9 6 15"></polyline>
                 </svg>
                 <span>Voltar ao Início</span>
             </a>
-        <center>
+            <center>
     </div>
     <hr>
     <footer class="footer">
-        <table width="100%">
+        <table width="100%" class="footer-table">
             <tr valign="top">
                 <td width="33%">
-                    <table border="1" cellpadding="6">
+                    <table border="1" cellpadding="6" class="footer-logo-table">
                         <tr>
                             <td>SOFTBYKE</td>
                         </tr>
                     </table>
-                    <p class="footer-description">Sua loja especializada em bicicletas e peças. Qualidade, <br>performance
+                    <p class="footer-description">Sua loja especializada em bicicletas e peças. Qualidade,
+                        <br>performance
                         e estilo para todos os ciclistas.</p>
                 </td>
- 
+
                 <td width="33%">
                     <h3>Navegação</h3>
                     <ul>
@@ -174,9 +252,9 @@
                         <li><a href="documentos.html">Documentos</a></li>
                     </ul>
                 </td>
- 
+
                 <td width="33%">
-                    <h3>Informações Academicas</h3>
+                    <h3>Informações Acadêmicas</h3>
                     <ul>
                         <li><strong>Curso:</strong> Ciência da Computação</li>
                         <li><strong>Disciplina:</strong> Desenvolvimento Web</li>
@@ -188,4 +266,5 @@
         </table>
     </footer>
 </body>
+
 </html>

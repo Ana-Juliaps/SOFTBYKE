@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 
-    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="./css/homepage.css">
 
     <style>
 
@@ -17,31 +17,33 @@
 
     <!-- ===================== NAVBAR ===================== -->
     <header class="navbar">
-        <table>
+        <table class="navbar-table">
             <tr>
-                <td class="navbar-logo" width="5%">SOFTBYKE</td>
+                <td class="navbar-logo">SOFTBYKE</td>
 
-                <td width="10%">
+                <td class="navbar-search-cell">
                     <form class="navbar-search" role="search">
-                        <input type="search" name="busca" size="35" placeholder="Buscar produtos...">
+                        <input type="search" name="busca" placeholder="Buscar produtos...">
                     </form>
                 </td>
 
-                <td width="15%"><a href="homepage.html">Home</a></td>
-                <td width="15%"><a href="empresa.html">Empresa</a></td>
-                <td width="15%"><a href="catalogo.html">Catálogo</a></td>
-                <td width="15%"><a href="galeria.html">Galeria</a></td>
-                <td width="15%"><a href="documentos.html">Documentos</a></td>
+                <td class="navbar-link"><a href="../homepage.html">Home</a></td>
+                <td class="navbar-link"><a href="empresa.html">Empresa</a></td>
+                <td class="navbar-link"><a href="catalogo.html">Catálogo</a></td>
+                <td class="navbar-link"><a href="galeria.html">Galeria</a></td>
+                <td class="navbar-link"><a href="documentos.html">Documentos</a></td>
             </tr>
         </table>
     </header>
-    <hr>
+    <hr class="navbar-divider">
     <!-- ===================== HERO ===================== -->
-    <section class="hero">
-        <p class="hero-tagline">Especialistas em Ciclismo desde 2010</p>
-        <h1 class="hero-title">A melhor seleção de bicicletas e peças do Brasil</h1>
-        <p class="hero-subtitle">Encontre a bike perfeita para seu estilo. Urbanas, MTB, Speed, Elétricas e muito mais
-            com os melhores preços e condições.</p>
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1 class="hero-title">A melhor seleção de bicicletas e peças do Brasil</h1>
+            <p class="hero-subtitle">Encontre a bike perfeita para seu estilo. Urbanas, MTB, Speed, Elétricas e muito
+                mais
+                com os melhores preços e condições.</p>
+        </div>
     </section>
 
     <section class="hero2">
@@ -67,356 +69,348 @@
         </table>
     </section>
 
+    <main class="main-content">
+        <!-- ===================== PRODUTOS EM DESTAQUE ===================== -->
+        <section class="featured-products">
+            <h4 class="section-title">Produtos em Destaque</h4>
 
-    <!-- ===================== PRODUTOS EM DESTAQUE ===================== -->
-    <section class="featured-products">
-        <h4 class="section-title">Produtos em Destaque</h4>
+            <div class="products-grid">
+                <table width="100%">
+                    <tr>
+                        <td width="33%">
+                            <article class="product-card">
+                                <div class="product-image-container">
+                                    <img src="img/bicicletas-destaque/Caloi-29-Comp-PTO-Lateral-1600x1066.png.webp"
+                                        alt="Bicicleta Urbana Pro" class="product-image">
+                                </div>
+                                <div class="product-info">
+                                    <span class="product-category">Mountain Bike</span>
+                                    <h4 class="product-name">Bicicleta Caloi Vulcan Aro 29</h4>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p class="product-price">R$ 2.499,00</p>
+                                            </td>
+                                            <td>
+                                                <form action="../paginas-produtos/pagina-do-produto.html">
+                                                    <input type="submit" name="btnProduto" value="Ver produto"
+                                                        class="btn-ver-produto">
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </article>
+                        </td>
 
-        <div class="products-grid">
-            <table width="100%">
-                <tr>
-                    <td width="33%">
-                        <article class="product-card">
-                            <img src="img/bicicletas-destaque/Caloi-29-Comp-PTO-Lateral-1600x1066.png.webp"
-                                alt="Bicicleta Urbana Pro" class="product-image">
-                            <div class="product-info">
-                                <span class="product-category">Mountain Bike</span>
-                                <h4 class="product-name">Bicicleta Caloi Vulcan Aro 29</h4>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <p class="product-price">R$ 2.499,00</p>
-                                        </td>
-                                        <td>
-                                            <form action="../paginas-produtos/pagina-do-produto.html">
-                                                <input type="submit" name="btnProduto" value="Ver produto"
-                                                    class="btn-ver-produto">
-                                            </form>
-                                        </td>
-                                    </tr>
-                                </table>
+                        <td width="33%">
+                            <article class="product-card">
+                                <div class="product-image-container">
+                                    <img src="img/bicicletas-destaque/senseAro29.png" alt="Bicicleta Urbana Pro"
+                                        class="product-image">
+                                </div>
+                                <div class="product-info">
+                                    <span class="product-category">Mountain Bike</span>
+                                    <h4 class="product-name">Bicicleta Sense One Aro 29</h4>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p class="product-price">R$ 4.200,00</p>
+                                            </td>
+                                            <td>
+                                                <form action="../paginas-produtos/pagina-do-produto2.html">
+                                                    <input type="submit" name="btnProduto" value="Ver produto"
+                                                        class="btn-ver-produto">
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </article>
+                        </td>
+
+                        <td width="33%">
+                            <article class="product-card">
+                                <div class="product-image-container">
+                                    <img src="img/bicicletas-destaque/produto-bicicleta-aro-700-oggi-velloce-disc-claris-16v-2026-6073505994.webp"
+                                        alt="Bicicleta Urbana Pro" class="product-image">
+                                </div>
+                                <div class="product-info">
+                                    <span class="product-category">Speed / Estrada</span>
+                                    <h4 class="product-name">Bicicleta 700 Oggi Velloce Disc 2026 16v Shimano Claris
+                                        Vermelho</h4>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p class="product-price">R$ 3.800,00</p>
+                                            </td>
+                                            <td>
+                                                <form action="../paginas-produtos/pagina-do-produto3.html">
+                                                    <input type="submit" name="btnProduto" value="Ver produto"
+                                                        class="btn-ver-produto">
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </article>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="33%">
+                            <article class="product-card">
+                                <div class="product-image-container">
+                                    <img src="img/bicicletas-destaque/bicicleta-cannondale-caad-optimo-4-16v-aro-700-66a3b8cd627d7.png"
+                                        alt="Bicicleta Urbana Pro" class="product-image">
+                                </div>
+                                <div class="product-info">
+                                    <span class="product-category">Speed / Estrada</span>
+                                    <h4 class="product-name">Bicicleta Cannondale Caad Optimo 4 Claris 16v. Aro 700</h4>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p class="product-price">R$ 9.400,00</p>
+                                            </td>
+                                            <td>
+                                                <form action="../paginas-produtos/pagina-do-produto4.html">
+                                                    <input type="submit" name="btnProduto" value="Ver produto"
+                                                        class="btn-ver-produto">
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </article>
+                        </td>
+
+                        <td width="33%">
+                            <article class="product-card">
+                                <div class="product-image-container">
+                                    <img src="img/bicicletas-destaque/specialized.png" alt="Bicicleta Urbana Pro"
+                                        class="product-image">
+                                </div>
+                                <div class="product-info">
+                                    <span class="product-category">Mountain Bike / XC</span>
+                                    <h4 class="product-name">Bicicleta Specialized Chisel Expert Feminina</h4>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p class="product-price">R$ 6.500,00</p>
+                                            </td>
+                                            <td>
+                                                <form action="../paginas-produtos/pagina-do-produto5.html">
+                                                    <input type="submit" name="btnProduto" value="Ver produto"
+                                                        class="btn-ver-produto">
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </article>
+                        </td>
+
+                        <td width="33%">
+                            <article class="product-card">
+                                <div class="product-image-container">
+                                    <img src="img/bicicletas-destaque/D_NQ_NP_825098-MLU77101196666_062024-O.webp"
+                                        alt="Bicicleta Urbana Pro" class="product-image">
+                                </div>
+                                <div class="product-info">
+                                    <span class="product-category">Mountain Bike</span>
+                                    <h4 class="product-name">Bicicleta Trek Marlin 6 - 3ª Geração Azul Marinho Aro 29
+                                    </h4>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p class="product-price">R$ 7.200,00</p>
+                                            </td>
+                                            <td>
+                                                <form action="../paginas-produtos/pagina-do-produto6.html">
+                                                    <input type="submit" name="btnProduto" value="Ver produto"
+                                                        class="btn-ver-produto">
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </article>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- ===================== PARCEIROS ===================== -->
+        <section class="partners">
+            <p class="partners-tagline" align="center">Parceiros</p>
+            <h4 class="section-title" align="center">Marcas Parceiras</h4>
+
+            <div class="partners-grid">
+                <table width="100%" cellspacing="20" border="0">
+                    <tr>
+                        <td width="25%" align="center">
+                            <div class="card-propaganda">
+                                <a href="https://www.oakley.com/pt-br" target="_blank">
+                                    <img src="img/imagens_patrocinio/images.png" alt="Propaganda Oakley">
+                                </a>
                             </div>
-                        </article>
-                    </td>
-
-                    <td width="33%">
-                        <article class="product-card">
-                            <img src="img/bicicletas-destaque/senseAro29.png" alt="Bicicleta Urbana Pro"
-                                class="product-image">
-                            <div class="product-info">
-                                <span class="product-category">Mountain Bike</span>
-                                <h4 class="product-name">Bicicleta Sense One Aro 29</h4>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <p class="product-price">R$ 4.200,00</p>
-                                        </td>
-                                        <td>
-                                            <form action="../paginas-produtos/pagina-do-produto2.html">
-                                                <input type="submit" name="btnProduto" value="Ver produto"
-                                                    class="btn-ver-produto">
-                                            </form>
-                                        </td>
-                                    </tr>
-                                </table>
+                        </td>
+                        <td width="25%" align="center">
+                            <div class="card-propaganda">
+                                <a href="https://mauroribeirosports.com.br/" target="_blank">
+                                    <img src="img/imagens_patrocinio/2.jpg" alt="Propaganda Mauro Ribeiro">
+                                </a>
                             </div>
-                        </article>
-                    </td>
-
-                    <td width="33%">
-                        <article class="product-card">
-                            <img src="img/bicicletas-destaque/produto-bicicleta-aro-700-oggi-velloce-disc-claris-16v-2026-6073505994.webp"
-                                alt="Bicicleta Urbana Pro" class="product-image">
-                            <div class="product-info">
-                                <span class="product-category">Speed / Estrada</span>
-                                <h4 class="product-name">Bicicleta 700 Oggi Velloce Disc 2026 16v Shimano Claris
-                                    Vermelho</h4>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <p class="product-price">R$ 3.800,00</p>
-                                        </td>
-                                        <td>
-                                            <form action="../paginas-produtos/pagina-do-produto3.html">
-                                                <input type="submit" name="btnProduto" value="Ver produto"
-                                                    class="btn-ver-produto">
-                                            </form>
-                                        </td>
-                                    </tr>
-                                </table>
+                        </td>
+                        <td width="25%" align="center">
+                            <div class="card-propaganda">
+                                <a href="https://www.gatorade.lat/br" target="_blank">
+                                    <img src="img/imagens_patrocinio/images3(1).png" alt="Propaganda Gatorade">
+                                </a>
                             </div>
-                        </article>
-                    </td>
+                        </td>
+                        <td width="25%" align="center">
+                            <div class="card-propaganda">
+                                <a href="https://www.kakau.com.br/" target="_blank">
+                                    <img src="img/imagens_patrocinio/images4.jpg" alt="Propaganda Kakau">
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- ===================== 15 BIKES MAIS VENDIDAS ===================== -->
+        <section class="best-sellers">
+            <h2 class="section-title">15 Bikes mais Vendidas</h2>
+
+            <table border="0" cellspacing="0" cellpadding="10" width="100%" class="tabela-vendas">
+                <tr class="header-row">
+                    <th colspan="2">Marca</th>
+                    <th>Tamanho</th>
+                    <th>Proporção / Aro</th>
+                    <th>Cor</th>
+                    <th>Preço</th>
                 </tr>
 
                 <tr>
-                    <td width="33%">
-                        <article class="product-card">
-                            <img src="img/bicicletas-destaque/bicicleta-cannondale-caad-optimo-4-16v-aro-700-66a3b8cd627d7.png"
-                                alt="Bicicleta Urbana Pro" class="product-image">
-                            <div class="product-info">
-                                <span class="product-category">Speed / Estrada</span>
-                                <h4 class="product-name">Bicicleta Cannondale Caad Optimo 4 Claris 16v. Aro 700</h4>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <p class="product-price">R$ 9.400,00</p>
-                                        </td>
-                                        <td>
-                                            <form action="../paginas-produtos/pagina-do-produto4.html">
-                                                <input type="submit" name="btnProduto" value="Ver produto"
-                                                    class="btn-ver-produto">
-                                            </form>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </article>
-                    </td>
+                    <th rowspan="3" colspan="2" class="brand-cell">Caloi</th>
+                    <td align="center">S (15")</td>
+                    <td align="center">Aro 29 (1:1.2)</td>
+                    <td align="center">Azul / Preto</td>
+                    <td align="center">R$ 2.499,00</td>
+                </tr>
+                <tr>
+                    <td align="center">M (17")</td>
+                    <td align="center">Aro 29 (1:1.2)</td>
+                    <td align="center">Cinza Metal</td>
+                    <td align="center">R$ 2.899,00</td>
+                </tr>
+                <tr>
+                    <td align="center">L (19")</td>
+                    <td align="center">Aro 29 (1:1.3)</td>
+                    <td align="center">Vermelho / Preto</td>
+                    <td align="center">R$ 3.100,00</td>
+                </tr>
 
-                    <td width="33%">
-                        <article class="product-card">
-                            <img src="img/bicicletas-destaque/specialized.png" alt="Bicicleta Urbana Pro"
-                                class="product-image">
-                            <div class="product-info">
-                                <span class="product-category">Mountain Bike / XC</span>
-                                <h4 class="product-name">Bicicleta Specialized Chisel Expert Feminina</h4>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <p class="product-price">R$ 6.500,00</p>
-                                        </td>
-                                        <td>
-                                            <form action="../paginas-produtos/pagina-do-produto5.html">
-                                                <input type="submit" name="btnProduto" value="Ver produto"
-                                                    class="btn-ver-produto">
-                                            </form>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </article>
-                    </td>
+                <tr>
+                    <th rowspan="3" colspan="2" class="brand-cell">Sense</th>
+                    <td align="center">L (19")</td>
+                    <td align="center">Aro 29 (1:1.1)</td>
+                    <td align="center">Preto Fosco</td>
+                    <td align="center">R$ 4.200,00</td>
+                </tr>
+                <tr>
+                    <td align="center">M (17")</td>
+                    <td align="center">Aro 29 (1:1.1)</td>
+                    <td align="center">Preto Fosco</td>
+                    <td align="center">R$ 4.100,00</td>
+                </tr>
+                <tr>
+                    <td align="center">XL (21")</td>
+                    <td align="center">Aro 29 (1:1.2)</td>
+                    <td align="center">Azul Petróleo</td>
+                    <td align="center">R$ 4.500,00</td>
+                </tr>
 
-                    <td width="33%">
-                        <article class="product-card">
-                            <img src="img/bicicletas-destaque/D_NQ_NP_825098-MLU77101196666_062024-O.webp"
-                                alt="Bicicleta Urbana Pro" class="product-image">
-                            <div class="product-info">
-                                <span class="product-category">Mountain Bike</span>
-                                <h4 class="product-name">Bicicleta Trek Marlin 6 - 3ª Geração Azul Marinho Aro 29</h4>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <p class="product-price">R$ 7.200,00</p>
-                                        </td>
-                                        <td>
-                                            <form action="../paginas-produtos/pagina-do-produto6.html">
-                                                <input type="submit" name="btnProduto" value="Ver produto"
-                                                    class="btn-ver-produto">
-                                            </form>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </article>
-                    </td>
+                <tr class="header-row">
+                    <th colspan="6">Categoria Road / Speed</th>
+                </tr>
+                <tr>
+                    <th colspan="2" align="left">Oggi</th>
+                    <td align="center">S (15")</td>
+                    <td align="center">Aro 700c</td>
+                    <td align="center">Vermelho Neon</td>
+                    <td align="center">R$ 3.800,00</td>
+                </tr>
+                <tr>
+                    <th colspan="2" align="left">Oggi</th>
+                    <td align="center">S (15")</td>
+                    <td align="center">Aro 700c</td>
+                    <td align="center">Prata</td>
+                    <td align="center">R$ 4.200,00</td>
+                </tr>
+                <tr>
+                    <th colspan="2" align="left">Cannondale</th>
+                    <td align="center">M (17")</td>
+                    <td align="center">Aro 29 (1:1.0)</td>
+                    <td align="center">Verde Lime</td>
+                    <td align="center">R$ 8.900,00</td>
+                </tr>
+                <tr>
+                    <th colspan="2" align="left">Cannondale</th>
+                    <td align="center">L (19")</td>
+                    <td align="center">Aro 29 (1:1.0)</td>
+                    <td align="center">Preto / Prata</td>
+                    <td align="center">R$ 9.400,00</td>
+                </tr>
+
+                <tr class="header-row">
+                    <th colspan="6">Lote Infantil</th>
+                </tr>
+                <tr>
+                    <th colspan="2" align="left">Sense</th>
+                    <td align="center">S (15")</td>
+                    <td align="center">Aro 29 (1:1.3)</td>
+                    <td align="center">Rosa / Branco</td>
+                    <td align="center">R$ 1.200,00</td>
+                </tr>
+
+                <tr>
+                    <th colspan="2" align="left">Specialized</th>
+                    <td align="center">S (15")</td>
+                    <td align="center">Aro 29 (1:1.2)</td>
+                    <td align="center">Grafite</td>
+                    <td align="center">R$ 6.500,00</td>
+                </tr>
+                <tr>
+                    <th colspan="2" align="left">Trek</th>
+                    <td align="center">M (17")</td>
+                    <td align="center">Aro 29 (1:1.1)</td>
+                    <td align="center">Azul Marinho</td>
+                    <td align="center">R$ 7.200,00</td>
                 </tr>
             </table>
-        </div>
-    </section>
-
-    <!-- ===================== PARCEIROS ===================== -->
-    <section class="partners">
-        <p class="partners-tagline" align="center">Parceiros</p>
-        <h4 class="section-title" align="center">Marcas Parceiras</h4>
-
-        <div class="partners-grid">
-            <table width="100%" cellspacing="20" border="0">
-                <tr>
-                    <div class="card-propaganda">
-                        <td width="25%" align="center">
-                            <a href="https://www.oakley.com/pt-br" target="_blank">
-                                <img src="img/imagens_patrocinio/images.png" alt="Propaganda da Marca">
-                            </a>
-                        </td>
-                    </div>
-                    <div class="card-propaganda">
-                        <td width="25%" align="center">
-                            <a href="https://mauroribeirosports.com.br/" target="_blank">
-                                <img src="img/imagens_patrocinio/2.jpg" alt="Propaganda da Marca">
-                            </a>
-                        </td>
-                    </div>
-                    <div class="card-propaganda">
-                        <td width="25%" align="center">
-                            <a href="https://www.gatorade.lat/br" target="_blank">
-                                <img src="img/imagens_patrocinio/images3(1).png" alt="Propaganda da Marca">
-                            </a>
-                        </td>
-                    </div>
-                    <div class="card-propaganda">
-                        <td width="25%" align="center">
-                            <a href="https://www.kakau.com.br/" target="_blank">
-                                <img src="img/imagens_patrocinio/images4.jpg" alt="Propaganda da Marca">
-                            </a>
-                        </td>
-                    </div>
-                </tr>
-            </table>
-
-        </div>
-    </section>
-
-    <!-- ===================== 15 BIKES MAIS VENDIDAS ===================== -->
-    <section class="best-sellers">
-        <h2 class="section-title" align="center">15 Bikes mais Vendidas</h2>
-
-        <table border="1" cellspacing="0" cellpadding="8" width="75%" align="center" class="tabela-vendas>
-
-            <!-- Cabeçalho -->
-            <tr bgcolor="#1a1a1a">
-                <th colspan="2">
-                    <font color="#ffffff">Marca</font>
-                </th>
-                <th>
-                    <font color="#ffffff">Tamanho</font>
-                </th>
-                <th>
-                    <font color="#ffffff">Proporção / Aro</font>
-                </th>
-                <th>
-                    <font color="#ffffff">Cor</font>
-                </th>
-                <th>
-                    <font color="#ffffff">Preço</font>
-                </th>
-            </tr>
-
-            <!-- Parte 1: Marca Caloi -->
-            <tr>
-                <th rowspan="3" colspan="2" bgcolor="#d9d9d9" valign="middle">Caloi</th>
-                <td align="center">S (15")</td>
-                <td align="center">Aro 29 (1:1.2)</td>
-                <td align="center">Azul / Preto</td>
-                <td align="center">R$ 2.499,00</td>
-            </tr>
-            <tr>
-                <td align="center" bgcolor="#a6a6a6"><b>M (17")</b></td>
-                <td align="center">Aro 29 (1:1.2)</td>
-                <td align="center">Cinza Metal</td>
-                <td align="center">R$ 2.899,00</td>
-            </tr>
-            <tr>
-                <td align="center">L (19")</td>
-                <td align="center">Aro 29 (1:1.3)</td>
-                <td align="center">Vermelho / Preto</td>
-                <td align="center">R$ 3.100,00</td>
-            </tr>
-
-            <!-- Parte 2: Marca Sense -->
-            <tr>
-                <th rowspan="3" colspan="2" bgcolor="#d9d9d9" valign="middle">Sense</th>
-                <td align="center">L (19")</td>
-                <td align="center">Aro 29 (1:1.1)</td>
-                <td rowspan="2" align="center" bgcolor="#1a1a1a" valign="middle">
-                    <font color="#ffffff"><b>Preto
-                            Fosco</b></font>
-                </td>
-                <td align="center">R$ 4.200,00</td>
-            </tr>
-            <tr>
-                <td align="center">M (17")</td>
-                <td align="center">Aro 29 (1:1.1)</td>
-                <td align="center">R$ 4.100,00</td>
-            </tr>
-            <tr>
-                <td align="center">XL (21")</td>
-                <td align="center">Aro 29 (1:1.2)</td>
-                <td align="center">Azul Petróleo</td>
-                <td align="center">R$ 4.500,00</td>
-            </tr>
-
-            <!-- Parte 3: Categoria Road / Speed -->
-            <tr bgcolor="#1a1a1a">
-                <th colspan="6">
-                    <font color="#ffffff">Categoria Road / Speed</font>
-                </th>
-            </tr>
-            <tr>
-                <th colspan="2" align="left">Oggi</th>
-                <td align="center" colspan="2"><b>Quadro Integrado Aro 700c</b></td>
-                <td align="center">Vermelho Neon</td>
-                <td align="center">R$ 3.800,00</td>
-            </tr>
-            <tr>
-                <th colspan="2" align="left">Oggi</th>
-                <td align="center">S (15")</td>
-                <td align="center">Aro 700c</td>
-                <td align="center" colspan="2" bgcolor="#bfbfbf"><b>Kit Prata / R$ 4.200,00</b></td>
-            </tr>
-            <tr>
-                <th colspan="2" align="left">Cannondale</th>
-                <td align="center">M (17")</td>
-                <td align="center">Aro 29 (1:1.0)</td>
-                <td align="center">Verde Lime</td>
-                <td align="center">R$ 8.900,00</td>
-            </tr>
-            <tr>
-                <th colspan="2" align="left">Cannondale</th>
-                <td align="center">L (19")</td>
-                <td align="center">Aro 29 (1:1.0)</td>
-                <td align="center">Preto / Prata</td>
-                <td align="center">R$ 9.400,00</td>
-            </tr>
-
-            <!-- Parte 4: Lote Infantil -->
-            <tr bgcolor="#1a1a1a">
-                <th colspan="6">
-                    <font color="#ffffff">Lote Infantil</font>
-                </th>
-            </tr>
-            <tr>
-                <td colspan="2"></td>
-                <td></td>
-                <td></td>
-                <td align="center">Rosa / Branco</td>
-                <td align="center">R$ 1.200,00</td>
-            </tr>
-
-            <!-- Parte 5: Linhas Premium -->
-            <tr>
-                <th colspan="2" align="left">Specialized</th>
-                <td align="center">S (15")</td>
-                <td align="center">Aro 29 (1:1.2)</td>
-                <td align="center">Grafite</td>
-                <td align="center">R$ 6.500,00</td>
-            </tr>
-            <tr>
-                <th colspan="2" align="left">Trek</th>
-                <td align="center">M (17")</td>
-                <td align="center">Aro 29 (1:1.1)</td>
-                <td align="center">Azul Marinho</td>
-                <td align="center">R$ 7.200,00</td>
-            </tr>
-
-        </table>
-    </section><br><br>
+        </section>
+    </main><br><br>
 
     <!-- ===================== FOOTER ===================== -->
     <hr>
     <footer class="footer">
-        <table width="100%">
+        <table width="100%" class="footer-table">
             <tr valign="top">
                 <td width="33%">
-                    <table border="1" cellpadding="6">
+                    <table border="1" cellpadding="6" class="footer-logo-table">
                         <tr>
                             <td>SOFTBYKE</td>
                         </tr>
                     </table>
                     <p class="footer-description">Sua loja especializada em bicicletas e peças. Qualidade,
                         <br>performance
-                        e estilo para todos os ciclistas.</p>
+                        e estilo para todos os ciclistas.
+                    </p>
                 </td>
 
                 <td width="33%">
@@ -431,7 +425,7 @@
                 </td>
 
                 <td width="33%">
-                    <h3>Informações Academicas</h3>
+                    <h3>Informações Acadêmicas</h3>
                     <ul>
                         <li><strong>Curso:</strong> Ciência da Computação</li>
                         <li><strong>Disciplina:</strong> Desenvolvimento Web</li>

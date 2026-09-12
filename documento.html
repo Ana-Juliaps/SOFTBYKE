@@ -1,144 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/documentos.css">
   <title>Documentos</title>
 </head>
+
 <body>
-    <!-- DOCUMETOS PAGE -->
-    <header class="navbar">
-        <table>
+  <!-- DOCUMETOS PAGE -->
+  <header class="navbar">
+    <table class="navbar-table">
+      <tr>
+        <td class="navbar-logo">SOFTBYKE</td>
+
+        <td class="navbar-search-cell">
+          <form class="navbar-search" role="search">
+            <input type="search" name="busca" placeholder="Buscar produtos...">
+          </form>
+        </td>
+
+        <td class="navbar-link"><a href="../homepage.html">Home</a></td>
+        <td class="navbar-link"><a href="empresa.html">Empresa</a></td>
+        <td class="navbar-link"><a href="catalogo.html">Catálogo</a></td>
+        <td class="navbar-link"><a href="galeria.html">Galeria</a></td>
+        <td class="navbar-link"><a href="documentos.html">Documentos</a></td>
+      </tr>
+    </table>
+  </header>
+  <hr class="navbar-divider">
+
+  <div class="documentos-apresentacao">
+    <span class="subtitulo">Área Técnica</span>
+    <h1>Documentos</h1>
+    <p class="descricao">Área técnica com wireframes, exemplos de código HTML, tabelas e links externos do projeto
+      SOFTBYKE.</p>
+  </div>
+  <br>
+
+  <main class="documentos-container">
+    <section id="wireframes">
+      <h2>Wireframes</h2>
+      <center>
+        <iframe style="border: 1px solid rgba(31, 0, 0, 0);" width="800" height="450"
+          src="https://embed.figma.com/design/UnBx4OIdU476es0DCQnuf9/SOFTBYKE?node-id=0-1&embed-host=share"
+          allowfullscreen></iframe>
+        <center>
+    </section>
+
+    <section id="linksExternos">
+      <h2>Links Externos Parceiros</h2>
+      <p>Clique nos cards abaixo para visitar os sites oficiais das <mark>principais marcas</mark> do mercado
+        ciclístico:</p>
+
+      <div class="grid-links">
+        <a href="https://www.caloi.com" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="img/logo1.png" alt="Logo Caloi" class="logo-brand">
+          <h3>Caloi</h3>
+        </a>
+
+        <a href="https://sensebike.com.br" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="img/logo2.png" alt="Logo Sense Bike" class="logo-brand">
+          <h3>Sense Bike</h3>
+        </a>
+
+        <a href="https://oggibikes.com.br" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="img/logo3.jpg" alt="Logo Oggi Bikes" class="logo-brand">
+          <h3>Oggi Bikes</h3>
+        </a>
+
+        <a href="https://www.specialized.com/br/pt" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="img/logo4.jpg" alt="Logo Specialized" class="logo-brand">
+          <h3>Specialized</h3>
+        </a>
+
+        <a href="https://www.trekbikes.com/br/pt_BR" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="img/logo5.jpg" alt="Logo Trek Bikes" class="logo-brand">
+          <h3>Trek Bikes</h3>
+        </a>
+
+        <a href="https://www.cannondale.com" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="img/logo6.png" alt="Logo Cannondale" class="logo-brand">
+          <h3>Cannondale</h3>
+        </a>
+
+        <a href="https://www.scott-sports.com/br/pt" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="img/logo7.jpg" alt="Logo Scott Sports" class="logo-brand">
+          <h3>Scott Sports</h3>
+        </a>
+
+        <a href="https://bike.shimano.com" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="img/logo8.avif" alt="Logo Shimano" class="logo-brand">
+          <h3>Shimano</h3>
+        </a>
+
+        <a href="https://www.sram.com" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="img/logo9.png" alt="Logo SRAM" class="logo-brand">
+          <h3>SRAM</h3>
+        </a>
+
+        <a href="https://www.bikepointsc.com.br/?srsltid=AfmBOopUx2RX1XcSiCEwFt7PXuUDuED0mw6io7BbUPau1NGDQSOhRjpY"
+          target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="img/logo10.png" alt="Logo Bike Point" class="logo-brand">
+          <h3>Bike Point</h3>
+        </a>
+      </div>
+    </section>
+  </main>
+  <br>
+
+  <hr>
+  <footer class="footer">
+    <table width="100%" class="footer-table">
+      <tr valign="top">
+        <td width="33%">
+          <table border="1" cellpadding="6" class="footer-logo-table">
             <tr>
-                <td class="navbar-logo" width="5%">SOFTBYKE</td>
-
-                <td width="10%">
-                    <form class="navbar-search" role="search">
-                        <input type="search" name="busca" size="35" placeholder="Buscar produtos...">
-                    </form>
-                </td>
-
-                <td width="15%"><a href="homepage.html">Home</a></td>
-                <td width="15%"><a href="empresa.html">Empresa</a></td>
-                <td width="15%"><a href="catalogo.html">Catálogo</a></td>
-                <td width="15%"><a href="galeria.html">Galeria</a></td>
-                <td width="15%"><a href="documentos.html">Documentos</a></td>
+              <td>SOFTBYKE</td>
             </tr>
-        </table>
-    </header>
-    <hr>
+          </table>
+          <p class="footer-description">Sua loja especializada em bicicletas e peças. Qualidade, <br>performance
+            e estilo para todos os ciclistas.</p>
+        </td>
 
-    <div class="documentos-apresentacao">
-      <span class="subtitulo">Área Técnica</span>
-      <h1>Documentos</h1>
-      <p class="descricao">Área técnica com wireframes, exemplos de código HTML, tabelas e links externos do projeto SOFTBYKE.</p>
-    </div>
-    <br>
+        <td width="33%">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="../homepage.html">Home</a></li>
+            <li><a href="empresa.html">Empresa</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="documentos.html">Documentos</a></li>
+          </ul>
+        </td>
 
-    <main class="documentos-container">
-      <section id="wireframes">
-        <h2>Wireframes</h2>
-        <center>
-          <iframe style="border: 1px solid rgba(31, 0, 0, 0);" width="800" height="450" src="https://embed.figma.com/design/UnBx4OIdU476es0DCQnuf9/SOFTBYKE?node-id=0-1&embed-host=share" allowfullscreen></iframe>
-        <center>
-      </section>
-
-      <section id="linksExternos">
-        <h2>Links Externos Parceiros</h2>
-        <p>Clique nos cards abaixo para visitar os sites oficiais das <mark>principais marcas</mark> do mercado ciclístico:</p>
-
-        <div class="grid-links">
-          <a href="https://www.caloi.com" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="img/logo1.png" alt="Logo Caloi" class="logo-brand">
-            <h3>Caloi</h3>
-          </a>
-
-          <a href="https://sensebike.com.br" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="img/logo2.png" alt="Logo Sense Bike" class="logo-brand">
-            <h3>Sense Bike</h3>
-          </a>
-
-          <a href="https://oggibikes.com.br" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="img/logo3.jpg" alt="Logo Oggi Bikes" class="logo-brand">
-            <h3>Oggi Bikes</h3>
-          </a>
-
-          <a href="https://www.specialized.com/br/pt" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="img/logo4.jpg" alt="Logo Specialized" class="logo-brand">
-            <h3>Specialized</h3>
-          </a>
-
-          <a href="https://www.trekbikes.com/br/pt_BR" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="img/logo5.jpg" alt="Logo Trek Bikes" class="logo-brand">
-            <h3>Trek Bikes</h3>
-          </a>
-
-          <a href="https://www.cannondale.com" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="img/logo6.png" alt="Logo Cannondale" class="logo-brand">
-            <h3>Cannondale</h3>
-          </a>
-
-          <a href="https://www.scott-sports.com/br/pt" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="img/logo7.jpg" alt="Logo Scott Sports" class="logo-brand">
-            <h3>Scott Sports</h3>
-          </a>
-
-          <a href="https://bike.shimano.com" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="img/logo8.avif" alt="Logo Shimano" class="logo-brand">
-            <h3>Shimano</h3>
-          </a>
-
-          <a href="https://www.sram.com" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="img/logo9.png" alt="Logo SRAM" class="logo-brand">
-            <h3>SRAM</h3>
-          </a>
-
-          <a href="https://www.bikepointsc.com.br/?srsltid=AfmBOopUx2RX1XcSiCEwFt7PXuUDuED0mw6io7BbUPau1NGDQSOhRjpY" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="img/logo10.png" alt="Logo Bike Point" class="logo-brand">
-            <h3>Bike Point</h3>
-          </a>
-        </div>
-      </section>
-    </main>
-    <br>
-
-    <hr>
-    <footer class="footer">
-        <table width="100%">
-            <tr valign="top">
-                <td width="33%">
-                    <table border="1" cellpadding="6">
-                        <tr>
-                            <td>SOFTBYKE</td>
-                        </tr>
-                    </table>
-                    <p class="footer-description">Sua loja especializada em bicicletas e peças. Qualidade, <br>performance
-                        e estilo para todos os ciclistas.</p>
-                </td>
- 
-                <td width="33%">
-                    <h3>Navegação</h3>
-                    <ul>
-                        <li><a href="../homepage.html">Home</a></li>
-                        <li><a href="empresa.html">Empresa</a></li>
-                        <li><a href="catalogo.html">Catálogo</a></li>
-                        <li><a href="galeria.html">Galeria</a></li>
-                        <li><a href="documentos.html">Documentos</a></li>
-                    </ul>
-                </td>
- 
-                <td width="33%">
-                    <h3>Informações Academicas</h3>
-                    <ul>
-                        <li><strong>Curso:</strong> Ciência da Computação</li>
-                        <li><strong>Disciplina:</strong> Desenvolvimento Web</li>
-                        <li><strong>Turma:</strong> A</li>
-                        <li><strong>Integrantes:</strong> Grazielle, Beatriz, Lara, Ana Júlia</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </footer>
+        <td width="33%">
+          <h3>Informações Academicas</h3>
+          <ul>
+            <li><strong>Curso:</strong> Ciência da Computação</li>
+            <li><strong>Disciplina:</strong> Desenvolvimento Web</li>
+            <li><strong>Turma:</strong> A</li>
+            <li><strong>Integrantes:</strong> Grazielle, Beatriz, Lara, Ana Júlia</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </footer>
 </body>
+
 </html>
